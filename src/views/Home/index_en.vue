@@ -10,7 +10,7 @@
                         <div class="display-1 mb-5">择仕中国</div>
                         <div class="bottom-decoration"></div>
                         <vue-typed-js :strings="[slide]">
-                            <h1 class="typing  my-5"></h1>
+                            <h1 class="typing  my-5" style="word-wrap: break-word"></h1>
                         </vue-typed-js>
                     </v-row>
                 </v-sheet>
@@ -50,7 +50,7 @@
                                                 为更多的地区和市场提供多元化的专业人力资源服务。
                                             </p>
                                             <div>
-                                                <v-btn class="float-right" color="rgba(35,35,50.8)">了解更多</v-btn>
+                                                <v-btn class="float-right" color="rgba(35,35,50.8)" to="/about_en">了解更多</v-btn>
                                             </div>
                                         </v-card>
                                     </v-col>
@@ -175,7 +175,7 @@
                             </v-row>
                             <v-row>
                                 <v-spacer></v-spacer>
-                                <v-btn class="mr-5 mt-5" dark tile color="#232332">寻找顾问</v-btn>
+                                <v-btn class="mr-5 mt-5" dark tile color="#232332" to="/consultant_en">寻找顾问</v-btn>
                             </v-row>
                         </v-container>
                     </v-item-group>
@@ -200,7 +200,7 @@
                                             <p class="grey--text mb-8">
                                                 因为信任， 超过400000名高端行业人才与我们保持长期的联系，致力于培养高品质猎头，为企业提供高端人才招聘服务</p>
                                             <div>
-                                                <v-btn class="float-right" color="rgba(35,35,50.8)">寻找职位</v-btn>
+                                                <v-btn class="float-right" color="rgba(35,35,50.8) " to="/career_en">寻找职位</v-btn>
                                             </div>
                                         </v-card>
                                     </v-col>
@@ -342,7 +342,7 @@
                                 <v-row class="fill-height mask flex-column pa-5" align="center" justify="center">
                                     <img src="@/assets/images/logo.png" alt="" style="width: 200px">
                                     <div class="top-decoration"></div>
-                                    <div class="display-3 my-5 font-weight-black"><span class="main-title">Get It In Touch</span>
+                                    <div class="display-3 my-5 font-weight-black"><span class="main-title">Get In Touch</span>
                                     </div>
                                     <div class="display-1 mb-5">联系我们</div>
                                     <div class="mb-5">Address：Room2311, Guangqi Building, No 425, yishan Road,xuhui zone,shanghai china</div>
@@ -392,6 +392,13 @@
 
 
 <style lang="css" scoped>
+
+    @media (max-width:960px) {
+        .typing{
+           font-size: 20px;
+           max-width: 280px;
+        }
+    }
     .slide1 {
         background-image: url('../../assets/images/banner4.jpg');
         background-size: cover;

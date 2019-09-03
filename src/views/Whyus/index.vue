@@ -29,13 +29,12 @@
                                 <v-card width="1600" class="mx-auto " flat>
                                     <v-row justify="center" align="center">
                                         <v-col cols="12" md="6">
-                                            <v-card class="" height="500" width="700" elevation="5">
-                                                <v-img src="../../assets/images/hire.jpg" aspect-ratio="1"
-                                                    class="grey lighten-2" max-width="700" max-height="500"></v-img>
+                                            <v-card  width="700" elevation="5">
+                                                <v-img src="../../assets/images/hire.jpg" width="100%" ></v-img>
                                             </v-card>
                                         </v-col>
                                         <v-col cols="12" md="6">
-                                            <v-card class="pa-10" height="500" width="700" flat>
+                                            <v-card class="pa-10" width="700" flat>
                                                 <v-card-text>
                                                     <h1><span class="primary--text">招聘</span>
                                                         <span class="black--text">业务</span></h1>
@@ -78,9 +77,8 @@
                                             </v-card>
                                         </v-col>
                                         <v-col cols="12" md="6">
-                                            <v-card class="" height="500" width="700" elevation="5">
-                                                <v-img style="" src="../../assets/images/互联网.jpg" aspect-ratio="1"
-                                                    class="grey lighten-2" max-width="700" max-height="500"></v-img>
+                                            <v-card width="700" elevation="5">
+                                                <v-img style="" src="../../assets/images/互联网.jpg" width="100%"></v-img>
                                             </v-card>
                                         </v-col>
 
@@ -93,13 +91,12 @@
                                 <v-card width="1600" class="mx-auto py-12" flat>
                                     <v-row justify="center" align="center">
                                         <v-col cols="12" md="6">
-                                            <v-card class="" height="500" width="700" elevation="5">
-                                                <v-img src="../../assets/images/外包.jpg" aspect-ratio="1"
-                                                    class="grey lighten-2" max-width="700" max-height="500"></v-img>
+                                            <v-card width="700" elevation="5">
+                                                <v-img src="../../assets/images/外包.jpg" width="100%"></v-img>
                                             </v-card>
                                         </v-col>
                                         <v-col cols="12" md="6">
-                                            <v-card class="pa-10" height="500" width="700" flat>
+                                            <v-card class="pa-10"  width="700" flat>
                                                 <v-card-text>
                                                     <h1><span class="primary--text">外包</span>
                                                         <span class="black--text">业务</span></h1>

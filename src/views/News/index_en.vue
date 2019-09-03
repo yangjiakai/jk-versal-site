@@ -36,7 +36,7 @@
                                         </v-list-item-content>
                                     </v-list-item>
     
-                                    <v-img src="../../assets/images/互联网.jpg" height="300"></v-img>
+                                    <v-img src="../../assets/images/外包.jpg" height="300"></v-img>
     
                                     <v-card-text>
                                         择仕新闻新闻新闻新闻新闻新闻新闻新闻新闻内容

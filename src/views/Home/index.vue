@@ -50,7 +50,7 @@
                                                     为更多的地区和市场提供多元化的专业人力资源服务。
                                                 </p>
                                                 <div>
-                                                    <v-btn class="float-right" color="rgba(35,35,50.8)">了解更多</v-btn>
+                                                    <v-btn class="float-right" color="rgba(35,35,50.8)" to="/about">了解更多</v-btn>
                                                 </div>
                                             </v-card>
                                         </v-col>
@@ -175,7 +175,7 @@
                                 </v-row>
                                 <v-row>
                                     <v-spacer></v-spacer>
-                                    <v-btn class="mr-5 mt-5" dark tile color="#232332">寻找顾问</v-btn>
+                                    <v-btn class="mr-5 mt-5" dark tile color="#232332" to="/consultant">寻找顾问</v-btn>
                                 </v-row>
                             </v-container>
                         </v-item-group>
@@ -200,7 +200,7 @@
                                                 <p class="grey--text mb-8">
                                                     因为信任， 超过400000名高端行业人才与我们保持长期的联系，致力于培养高品质猎头，为企业提供高端人才招聘服务</p>
                                                 <div>
-                                                    <v-btn class="float-right" color="rgba(35,35,50.8)">寻找职位</v-btn>
+                                                    <v-btn class="float-right" color="rgba(35,35,50.8)" to="/career">寻找职位</v-btn>
                                                 </div>
                                             </v-card>
                                         </v-col>

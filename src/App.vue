@@ -24,7 +24,7 @@
     </v-app-bar>
 
     <!-- Side Bar -->
-    <v-navigation-drawer v-model="drawer" absolute temporary>
+    <v-navigation-drawer v-model="drawer"  fixed  >
       <v-list v-if="language=='中文'">
         <v-subheader>导航</v-subheader>
         <v-list-item-group>
@@ -69,7 +69,7 @@
 
         <v-row justify="center">
 
-          <v-col cols="12" sm="6" md="3">
+          <v-col cols="6" md="3">
             <ul class="mx-auto" style="width:150px" v-if="language=='中文'">
               <li>企业情报</li>
               <li v-for="(item,ia) in footer_nav.col1" :key="ia">
@@ -83,7 +83,7 @@
               </li>
             </ul>
           </v-col>
-          <v-col cols="12" sm="6" md="3">
+          <v-col cols="6" md="3">
             <ul class="mx-auto" style="width:150px" v-if="language=='中文'">
               <li>寻找顾问</li>
               <li v-for="(item,ib) in footer_nav.col2" :key="ib">
@@ -97,7 +97,7 @@
               </li>
             </ul>
           </v-col>
-          <v-col cols="12" sm="6" md="3">
+          <v-col cols="6" md="3">
             <ul class="mx-auto" style="width:150px" v-if="language=='中文'">
               <li>工作机会</li>
               <li v-for="(item,ic) in footer_nav.col3" :key="ic">
@@ -111,7 +111,7 @@
               </li>
             </ul>
           </v-col>
-          <v-col cols="12" sm="6" md="3">
+          <v-col cols="6" md="3">
             <ul class="mx-auto" style="width:150px" v-if="language=='中文'">
               <li>择仕新闻</li>
               <li v-for="(item,id) in footer_nav.col4" :key="id">

@@ -24,17 +24,17 @@
             <v-container fluid>
                 <v-row>
                     <v-col>
-                        <v-card class="mx-auto my-n12   history-warp" elevation="10" dark color="">
+                        <v-card class="mx-auto my-n12   history-warp" elevation="10" dark >
                             <v-toolbar flat color="#232332" dark>
                                 <v-toolbar-title>About Versal</v-toolbar-title>
                             </v-toolbar>
-                            <v-tabs vertical background-color="#232332">
+                            <v-tabs :vertical="vertical" background-color="#232332">
                                 <v-tab class="tab1">
-                                    <v-icon left>mdi-account</v-icon>
-                                    历史&nbsp&nbsp&nbsp&nbsp沿革
+                          
+                                    历史沿革
                                 </v-tab>
                                 <v-tab>
-                                    <v-icon left>mdi-lock</v-icon>
+                         
                                     择仕创始人
                                 </v-tab>
 
@@ -55,7 +55,7 @@
                                                 </v-timeline-item>
                                                 <v-timeline-item class="mb-4" color="grey" icon-color="grey lighten-2"
                                                     small right v-for="(item,index) in history">
-                                                    <v-card class="elevation-2 " color="transparent" max-width="300">
+                                                    <v-card class="elevation-2 " color="transparent" max-width="250">
                                                         <v-card-title class="headline">{{item.year}}</v-card-title>
                                                         <v-card-text>
                                                             {{item.event}}
@@ -74,11 +74,11 @@
                                             <v-row justify="center" align="center">
                                                 <v-col cols="12" md="6">
                                                     <v-card class="" height="469" width="469" elevation="20">
-                                                        <img src="../../assets/images/about/CEO.png" alt="">
+                                                        <img src="../../assets/images/about/CEO.png" alt="" width="100%">
                                                     </v-card>
                                                 </v-col>
                                                 <v-col cols="12" md="6">
-                                                    <v-card class="pa-10" max-width="469" height="469" flat
+                                                    <v-card class="pa-10" max-width="469" min-height="469" flat
                                                         elevation="20">
 
                                                         <v-card-text>
@@ -121,6 +121,7 @@
         data() {
             return {
                 dense: false,
+                vertical:true,
                 history: [{
                         year: '2007年',
                         event: 'VERSAL成立于上海',
@@ -169,6 +170,7 @@
         mounted() {
             if (window.innerWidth < 1000) {
                 this.dense = true
+                this.vertical =false
             }
         },
     }

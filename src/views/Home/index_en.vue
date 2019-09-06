@@ -63,7 +63,7 @@
         </div>
         <div class="partner-warp ">
             <div class="white">
-                <v-card class="white mx-auto pa-5" flat width="1200">
+                <v-card class="white mx-auto pa-5" flat width="1600">
                     <v-row>
                         <v-col>
                             <v-card class="text-center" flat>
@@ -75,8 +75,8 @@
                     </v-row>
                     <v-item-group>
                         <v-container>
-                            <v-row>
-                                <v-col cols="12" md="6" lg="3">
+                            <v-row justify="center">
+                                <v-col cols="12" md="4" lg="2">
                                     <v-item v-slot:default="{ active, toggle }">
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card @click="toggle" :elevation="hover?10:2" class="text-center mx-auto"
@@ -100,7 +100,7 @@
                                     </v-item>
 
                                 </v-col>
-                                <v-col cols="12" md="6" lg="3">
+                                <v-col cols="12" md="4" lg="2">
                                     <v-item v-slot:default="{ active, toggle }">
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card @click="toggle" :elevation="hover?10:2" class="text-center mx-auto"
@@ -124,7 +124,30 @@
                                         </v-hover>
                                     </v-item>
                                 </v-col>
-                                <v-col cols="12" md="6" lg="3">
+                                <v-col cols="12" md="4" lg="2">
+                                    <v-item v-slot:default="{ active, toggle }">
+                                        <v-hover v-slot:default="{ hover }">
+                                            <v-card @click="toggle" :elevation="hover?10:2" class="text-center mx-auto"
+                                                max-width="250">
+                                                <v-img src="../../assets/images/home/pt5.jpg" class="mx-auto">
+                                                    <v-expand-transition>
+                                                        <v-card-title class="fill-height white--text" align-end
+                                                            v-if="hover" style="background-color:rgba(0, 0, 0, .5)">
+                                                            <p class="caption">曾就职于中软，东南融通，文思海辉，佰钧成等国内一流IT外包公司，并担任重要管理职位。同时，在Microsoft，Criteo等国际知名IT企业任职过。拥有丰富的IT，外包全行业的经验。
+                                                            </p>
+                                                        </v-card-title>
+                                                    </v-expand-transition>
+                                                </v-img>
+                                                <v-card-text>
+                                                    <h3 class="my-5">外包业务负责人/<span class="blue--text">IT,全行业</span></h3>
+                                                    <h2 class="my-5">TOM SUN 孙磊</h2>
+
+                                                </v-card-text>
+                                            </v-card>
+                                        </v-hover>
+                                    </v-item>
+                                </v-col>
+                                <v-col cols="12" md="4" lg="2">
                                     <v-item v-slot:default="{ active, toggle }">
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card @click="toggle" :elevation="hover?10:2" class="text-center mx-auto"
@@ -148,7 +171,7 @@
                                         </v-hover>
                                     </v-item>
                                 </v-col>
-                                <v-col cols="12" md="6" lg="3">
+                                <v-col cols="12" md="4" lg="2">
                                     <v-item v-slot:default="{ active, toggle }">
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card @click="toggle" :elevation="hover?10:2" class="text-center mx-auto"

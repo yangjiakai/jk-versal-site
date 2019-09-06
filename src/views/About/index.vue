@@ -230,7 +230,7 @@
     }
 
     .history-warp {
-        background-image: url('../../assets/images/about/history.jpg');
+        background-image: url('../../assets/images/about/history2.jpg');
         background-position: center center;
         background-size: cover;
         background-attachment: fixed;

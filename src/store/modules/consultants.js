@@ -26,7 +26,7 @@ const actions = {
     async fetchConsultants({
         commit
     }) {
-        const response = await Axios.get("http://localhost:3000/consultants")
+        const response = await Axios.get("http://my-json-server.typicode.com/yangjiakai/zeshi3/consultants")
         commit('setConsultants', response.data)
     },
 
@@ -35,7 +35,7 @@ const actions = {
         commit
     }, editedItem) {
         const response = await Axios.post(
-            'http://localhost:3000/consultants',
+            'http://my-json-server.typicode.com/yangjiakai/zeshi3/consultants',
             editedItem
 
         );
@@ -44,7 +44,7 @@ const actions = {
     async deleteConsultant({
         commit
     }, id) {
-        await Axios.delete(`http://localhost:3000/consultants/${id}`);
+        await Axios.delete(`http://my-json-server.typicode.com/yangjiakai/zeshi3/consultants/${id}`);
         commit('removeConsultant', id);
     },
 
@@ -52,7 +52,7 @@ const actions = {
         commit
     }, editedItem) {
         const response = await Axios.put(
-            `http://localhost:3000/consultants/${editedItem.id}`,
+            `http://my-json-server.typicode.com/yangjiakai/zeshi3/consultants/${editedItem.id}`,
             editedItem
         );
         commit('updateConsultant', response.data);

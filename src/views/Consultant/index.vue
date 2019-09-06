@@ -12,6 +12,7 @@
                                     <div class="display-3 my-5 font-weight-black"><span class="main-title">寻找顾问</span>
                                     </div>
                                     <div class="display-1 mb-5">Meet Consultants</div>
+                                    <v-btn to="consultant_edit">管理顾问</v-btn>
                                     <div class="bottom-decoration"></div>
                                 </v-row>
                             </v-card>
@@ -66,12 +67,17 @@
                                                                             <v-row>
                                                                                 <v-col cols="12" md="4" class="py-0">
                                                                                     <v-card color="#232332"
-                                                                                      height="100%" dark>
+                                                                                        height="100%" dark>
                                                                                         <v-img
                                                                                             src="../../assets/avatar.jpg">
-                                                                                            <v-btn class="float-right d-flex d-md-none"  color="white darken-1"  @click="dialog = false" icon>
-                                                                                                    <v-icon>fas fa-times</v-icon>
-                                                                                                </v-btn>
+                                                                                            <v-btn
+                                                                                                class="float-right d-flex d-md-none"
+                                                                                                color="white darken-1"
+                                                                                                @click="dialog = false"
+                                                                                                icon>
+                                                                                                <v-icon>fas fa-times
+                                                                                                </v-icon>
+                                                                                            </v-btn>
                                                                                         </v-img>
                                                                                         <div class="pa-5">
                                                                                             <h1 class="display-1 pa-2">
@@ -97,20 +103,20 @@
                                                                                     <v-card>
                                                                                         <v-card-text>
                                                                                             <div>
-                                                                                                <div style="overflow: hidden" width="100%" class="pa-2">
-                                                                                                    <!-- <v-btn
-                                                                                                        color="white darken-1"
-                                                                                                        icon
-                                                                                                        @click="dialog = false">
-                                                                                                        <v-icon>
-                                                                                                            fas
+                                                                                                <div style="overflow: hidden"
+                                                                                                    width="100%"
+                                                                                                    class="pa-2">
+
+
+
+                                                                                                    <v-btn
+                                                                                                        class="float-right d-none d-md-flex"
+                                                                                                        color="grey darken-1"
+                                                                                                        @click="dialog = false"
+                                                                                                        icon>
+                                                                                                        <v-icon>fas
                                                                                                             fa-times
                                                                                                         </v-icon>
-                                                                                                    </v-btn> -->
-                                                                                                    
-                                                                                                    
-                                                                                                    <v-btn class="float-right d-none d-md-flex"  color="grey darken-1"  @click="dialog = false" icon>
-                                                                                                        <v-icon>fas fa-times</v-icon>
                                                                                                     </v-btn>
                                                                                                 </div>
                                                                                                 <h2
@@ -199,74 +205,7 @@
                                                                                 </v-col>
                                                                             </v-row>
 
-                                                                            <!-- 
-                                                                            <v-card-title class="white--text pa-0"
-                                                                                style="background-color:#232332;">
 
-                                                                                <v-row>
-                                                                                    <v-col class="pa-0" align="start">
-                                                                                        <v-card width="1200px"
-                                                                                            color="transparent"
-                                                                                            class="mx-auto" flat dark>
-
-                                                                                            <v-row>
-                                                                                                <v-col cols="12" md="6">
-                                                                                                    <v-card
-                                                                                                
-                                                                                                        max-width="300">
-                                                                                                        <v-img
-                                                                                                            src="../../assets/avatar.jpg"
-                                                                                                            width="100%">
-                                                                                                        </v-img>
-                                                                                                    </v-card>
-                                                                                                </v-col>
-                                                                                                <v-col cols="12" md="6">
-                                                                                                    <v-card>
-                                                                                                        <div
-                                                                                                            class="mx-5">
-                                                                                                            <div>
-                                                                                                                
-                                                                                                            </div>
-                                                                                                            <h1
-                                                                                                                class="display-1 pa-2">
-                                                                                                                {{consultant.name}}
-                                                                                                            </h1>
-                                                                                                            <h2
-                                                                                                                class="title pa-2">
-                                                                                                                {{consultant.position}}
-                                                                                                            </h2>
-                                                                                                            <div
-                                                                                                                class="subtitle-2 pa-2">
-                                                                                                                <i
-                                                                                                                    class="fas fa-map-marker-alt mr-2"></i>{{consultant.location}}
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="subtitle-2 pa-2">
-                                                                                                                <i
-                                                                                                                    class="far fa-envelope  mr-2"></i>{{consultant.email}}
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </v-card>
-                                                                                                </v-col>
-                                                                                            </v-row>
-
-
-                                                                                        </v-card>
-
-
-
-                                                                                    </v-col>
-                                                                                </v-row>
-
-                                                                            </v-card-title>
-                                                                            <v-row>
-                                                                                <v-col>
-                                                                                    <v-card width="1200px"
-                                                                                        class="mx-auto">
-                                                                         
-                                                                                    </v-card>
-                                                                                </v-col>
-                                                                            </v-row> -->
                                                                         </v-card>
                                                                     </v-col>
                                                                 </v-row>

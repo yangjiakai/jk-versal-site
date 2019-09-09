@@ -24,14 +24,14 @@
     </v-app-bar>
 
     <!-- Side Bar -->
-    <v-navigation-drawer v-model="drawer"  fixed  >
+    <v-navigation-drawer v-model="drawer" fixed dark color="#232332">
       <v-list v-if="language=='中文'">
         <v-subheader>导航</v-subheader>
         <v-list-item-group>
           <template v-for="(item,lc) in navigator">
             <v-list-item :to="item.route" :key="lc">
               <v-list-item-icon>
-                <v-icon>fas fa-compass</v-icon>
+                <v-icon>fab fa-ethereum</v-icon>
               </v-list-item-icon>
               <v-list-item-content>
                 <v-list-item-subtitle v-text="item.name"></v-list-item-subtitle>
@@ -46,6 +46,9 @@
         <v-list-item-group>
           <template v-for="(item,ld) in navigator_en">
             <v-list-item :to="item.route" :key="ld">
+              <v-list-item-icon>
+                <v-icon>fab fa-ethereum</v-icon>
+              </v-list-item-icon>
               <v-list-item-content>
                 <v-list-item-subtitle v-text="item.name"></v-list-item-subtitle>
               </v-list-item-content>

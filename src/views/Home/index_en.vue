@@ -6,7 +6,7 @@
                     <v-row class="fill-height mask flex-column" align="center" justify="center">
                         <img src="@/assets/images/logo.png" alt="" style="width: 200px">
                         <div class="top-decoration"></div>
-                        <div class="display-4 my-5 font-weight-black"><span class="main-title">VERSAL</span></div>
+                        <div class=" my-5 font-weight-black"><span class="main-title" style="font-size:5em">VERSAL</span></div>
                         <div class="display-1 mb-5">择仕中国</div>
                         <div class="bottom-decoration"></div>
                         <vue-typed-js :strings="[slide]">

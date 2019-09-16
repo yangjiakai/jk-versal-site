@@ -275,7 +275,7 @@
                             </v-row>
                             <v-row align="center">
                                 <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/映客.png" alt="" max-width="120" class="mx-auto">
+                                    <v-img src="../../assets/images/home/wanke.png" alt="" max-width="120" class="mx-auto">
                                     </v-img>
                                 </v-col>
                                 <v-col cols="6" md="2">
@@ -294,7 +294,7 @@
                                     </v-img>
                                 </v-col>
                                 <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/墨迹天气.png" alt="" max-width="120"
+                                    <v-img src="../../assets/images/home/海南航空.png" alt="" max-width="120"
                                         class="mx-auto">
                                     </v-img>
                                 </v-col>
@@ -306,7 +306,7 @@
                             </v-row>
                             <v-row align="center">
                                 <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/透云科技.png" alt="" max-width="120"
+                                    <v-img src="../../assets/images/home/摩根士丹利.png" alt="" max-width="120"
                                         class="mx-auto">
                                     </v-img>
                                 </v-col>
@@ -315,21 +315,21 @@
                                     </v-img>
                                 </v-col>
                                 <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/多点.png" alt="" max-width="120" class="mx-auto">
-                                    </v-img>
-                                </v-col>
-                                <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/叽里呱啦.png" alt="" max-width="120"
-                                        class="mx-auto">
-                                    </v-img>
-                                </v-col>
-                                <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/流利说.png" alt="" max-width="120"
-                                        class="mx-auto">
+                                    <v-img src="../../assets/images/home/中国农业银行.png" alt="" max-width="120" class="mx-auto">
                                     </v-img>
                                 </v-col>
                                 <v-col cols="6" md="2">
                                     <v-img src="../../assets/images/home/易果生鲜.png" alt="" max-width="120"
+                                        class="mx-auto">
+                                    </v-img>
+                                </v-col>
+                                <v-col cols="6" md="2">
+                                    <v-img src="../../assets/images/home/eaton.png" alt="" max-width="120"
+                                        class="mx-auto">
+                                    </v-img>
+                                </v-col>
+                                <v-col cols="6" md="2">
+                                    <v-img src="../../assets/images/home/上汽集团.png" alt="" max-width="120"
                                         class="mx-auto">
                                     </v-img>
                                 </v-col>
@@ -349,7 +349,7 @@
                                     </v-img>
                                 </v-col>
                                 <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/哈罗出行.png" alt="" max-width="120"
+                                    <v-img src="../../assets/images/home/siemens.svg" alt="" max-width="120"
                                         class="mx-auto">
                                     </v-img>
                                 </v-col>

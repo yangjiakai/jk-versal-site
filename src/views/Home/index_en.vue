@@ -237,125 +237,125 @@
 
 
         <div class="white">
-            <v-container>
-                <v-row>
-                    <v-col>
-                        <v-card max-width="1200" class="pa-5 mx-auto" flat>
-                            <v-row>
-                                <v-col>
-                                    <v-card class="text-center" flat>
-                                        <h1 class="my-5"><span
-                                                class="red--text font-weight-black mx-2 ">300+</span>优质合作客户</h1>
-                                        <p class="grey--text mb-8">
-                                            我们的全人力资源领域客户包括：通用电气、杜邦、IBM、光明集团、万科集团、网易、墨迹天气、喜马拉雅、携程、链家、大搜车等优质客户</p>
-                                    </v-card>
-                                </v-col>
-                            </v-row>
-                            <v-row align="center" justify="center">
-                                <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/bilibili.png" alt="" max-width="120"
-                                        class="mx-auto"></v-img>
-                                </v-col>
-                                <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/阿里巴巴.png" alt="" max-width="120"
-                                        class="mx-auto">
-                                    </v-img>
-                                </v-col>
-                                <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/网易.png" alt="" max-width="120" class="mx-auto">
-                                    </v-img>
-                                </v-col>
-                                <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/携程.png" alt="" max-width="120" class="mx-auto">
-                                    </v-img>
-                                </v-col>
-                            </v-row>
-                            <v-row align="center">
-                                <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/映客.png" alt="" max-width="120" class="mx-auto">
-                                    </v-img>
-                                </v-col>
-                                <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/大搜车.png" alt="" max-width="120"
-                                        class="mx-auto">
-                                    </v-img>
-                                </v-col>
-                                <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/云鹊医.png" alt="" max-width="120"
-                                        class="mx-auto">
-                                    </v-img>
-                                </v-col>
-                                <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/喜马拉雅.png" alt="" max-width="120"
-                                        class="mx-auto">
-                                    </v-img>
-                                </v-col>
-                                <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/墨迹天气.png" alt="" max-width="120"
-                                        class="mx-auto">
-                                    </v-img>
-                                </v-col>
-                                <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/光明集团.png" alt="" max-width="120"
-                                        class="mx-auto">
-                                    </v-img>
-                                </v-col>
-                            </v-row>
-                            <v-row align="center">
-                                <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/透云科技.png" alt="" max-width="120"
-                                        class="mx-auto">
-                                    </v-img>
-                                </v-col>
-                                <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/链家.png" alt="" max-width="120" class="mx-auto">
-                                    </v-img>
-                                </v-col>
-                                <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/多点.png" alt="" max-width="120" class="mx-auto">
-                                    </v-img>
-                                </v-col>
-                                <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/叽里呱啦.png" alt="" max-width="120"
-                                        class="mx-auto">
-                                    </v-img>
-                                </v-col>
-                                <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/流利说.png" alt="" max-width="120"
-                                        class="mx-auto">
-                                    </v-img>
-                                </v-col>
-                                <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/易果生鲜.png" alt="" max-width="120"
-                                        class="mx-auto">
-                                    </v-img>
-                                </v-col>
-                            </v-row>
-                            <v-row justify="center" align="center">
-                                <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/优衣库.png" alt="" max-width="120"
-                                        class="mx-auto">
-                                    </v-img>
-                                </v-col>
-                                <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/微盟.png" alt="" max-width="120" class="mx-auto">
-                                    </v-img>
-                                </v-col>
-                                <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/快看.png" alt="" max-width="120" class="mx-auto">
-                                    </v-img>
-                                </v-col>
-                                <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/哈罗出行.png" alt="" max-width="120"
-                                        class="mx-auto">
-                                    </v-img>
-                                </v-col>
-                            </v-row>
-                        </v-card>
-                    </v-col>
-                </v-row>
-            </v-container>
-        </div> 
+                <v-container>
+                    <v-row>
+                        <v-col>
+                            <v-card max-width="1200" class="pa-5 mx-auto" flat>
+                                <v-row>
+                                    <v-col>
+                                        <v-card class="text-center" flat>
+                                            <h1 class="my-5"><span
+                                                    class="red--text font-weight-black mx-2 ">300+</span>优质合作客户</h1>
+                                            <p class="grey--text mb-8">
+                                                我们拥有优质的全人力资源领域客户</p>
+                                        </v-card>
+                                    </v-col>
+                                </v-row>
+                                <v-row align="center" justify="center">
+                                    <v-col cols="6" md="2">
+                                        <v-img src="../../assets/images/home/bilibili.png" alt="" max-width="120"
+                                            class="mx-auto"></v-img>
+                                    </v-col>
+                                    <v-col cols="6" md="2">
+                                        <v-img src="../../assets/images/home/阿里巴巴.png" alt="" max-width="120"
+                                            class="mx-auto">
+                                        </v-img>
+                                    </v-col>
+                                    <v-col cols="6" md="2">
+                                        <v-img src="../../assets/images/home/网易.png" alt="" max-width="120" class="mx-auto">
+                                        </v-img>
+                                    </v-col>
+                                    <v-col cols="6" md="2">
+                                        <v-img src="../../assets/images/home/携程.png" alt="" max-width="120" class="mx-auto">
+                                        </v-img>
+                                    </v-col>
+                                </v-row>
+                                <v-row align="center">
+                                    <v-col cols="6" md="2">
+                                        <v-img src="../../assets/images/home/wanke.png" alt="" max-width="120" class="mx-auto">
+                                        </v-img>
+                                    </v-col>
+                                    <v-col cols="6" md="2">
+                                        <v-img src="../../assets/images/home/大搜车.png" alt="" max-width="120"
+                                            class="mx-auto">
+                                        </v-img>
+                                    </v-col>
+                                    <v-col cols="6" md="2">
+                                        <v-img src="../../assets/images/home/云鹊医.png" alt="" max-width="120"
+                                            class="mx-auto">
+                                        </v-img>
+                                    </v-col>
+                                    <v-col cols="6" md="2">
+                                        <v-img src="../../assets/images/home/喜马拉雅.png" alt="" max-width="120"
+                                            class="mx-auto">
+                                        </v-img>
+                                    </v-col>
+                                    <v-col cols="6" md="2">
+                                        <v-img src="../../assets/images/home/海南航空.png" alt="" max-width="120"
+                                            class="mx-auto">
+                                        </v-img>
+                                    </v-col>
+                                    <v-col cols="6" md="2">
+                                        <v-img src="../../assets/images/home/光明集团.png" alt="" max-width="120"
+                                            class="mx-auto">
+                                        </v-img>
+                                    </v-col>
+                                </v-row>
+                                <v-row align="center">
+                                    <v-col cols="6" md="2">
+                                        <v-img src="../../assets/images/home/摩根士丹利.png" alt="" max-width="120"
+                                            class="mx-auto">
+                                        </v-img>
+                                    </v-col>
+                                    <v-col cols="6" md="2">
+                                        <v-img src="../../assets/images/home/链家.png" alt="" max-width="120" class="mx-auto">
+                                        </v-img>
+                                    </v-col>
+                                    <v-col cols="6" md="2">
+                                        <v-img src="../../assets/images/home/中国农业银行.png" alt="" max-width="120" class="mx-auto">
+                                        </v-img>
+                                    </v-col>
+                                    <v-col cols="6" md="2">
+                                        <v-img src="../../assets/images/home/易果生鲜.png" alt="" max-width="120"
+                                            class="mx-auto">
+                                        </v-img>
+                                    </v-col>
+                                    <v-col cols="6" md="2">
+                                        <v-img src="../../assets/images/home/eaton.png" alt="" max-width="120"
+                                            class="mx-auto">
+                                        </v-img>
+                                    </v-col>
+                                    <v-col cols="6" md="2">
+                                        <v-img src="../../assets/images/home/上汽集团.png" alt="" max-width="120"
+                                            class="mx-auto">
+                                        </v-img>
+                                    </v-col>
+                                </v-row>
+                                <v-row justify="center" align="center">
+                                    <v-col cols="6" md="2">
+                                        <v-img src="../../assets/images/home/优衣库.png" alt="" max-width="120"
+                                            class="mx-auto">
+                                        </v-img>
+                                    </v-col>
+                                    <v-col cols="6" md="2">
+                                        <v-img src="../../assets/images/home/微盟.png" alt="" max-width="120" class="mx-auto">
+                                        </v-img>
+                                    </v-col>
+                                    <v-col cols="6" md="2">
+                                        <v-img src="../../assets/images/home/快看.png" alt="" max-width="120" class="mx-auto">
+                                        </v-img>
+                                    </v-col>
+                                    <v-col cols="6" md="2">
+                                        <v-img src="../../assets/images/home/siemens.svg" alt="" max-width="120"
+                                            class="mx-auto">
+                                        </v-img>
+                                    </v-col>
+                                </v-row>
+                            </v-card>
+                        </v-col>
+                    </v-row>
+                </v-container>
+            </div>
         <div class="touch-warp">
             <div class="mask">
                 <v-container>

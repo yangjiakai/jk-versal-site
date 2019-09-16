@@ -12,7 +12,7 @@
                                     <div class="display-3 my-5 font-weight-black"><span class="main-title">工作机会</span>
                                     </div>
                                     <div class="display-1 mb-5">Your Career</div>
-                                    <v-btn to="job_edit">管理工作</v-btn>
+
                                     <div class="bottom-decoration"></div>
                                 </v-row>
                             </v-card>

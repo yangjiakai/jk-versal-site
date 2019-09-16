@@ -12,7 +12,6 @@
                                     <div class="display-3 my-5 font-weight-black"><span class="main-title">寻找顾问</span>
                                     </div>
                                     <div class="display-1 mb-5">Meet Consultants</div>
-                                    <v-btn to="consultant_edit">管理顾问</v-btn>
                                     <div class="bottom-decoration"></div>
                                 </v-row>
                             </v-card>

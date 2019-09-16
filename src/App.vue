@@ -120,12 +120,68 @@
               <li v-for="(item,id) in footer_nav.col4" :key="id">
                 <router-link :to="item.route">{{item.name}}</router-link>
               </li>
+              <li>
+                <v-dialog v-model="dialog" width="500" persistent>
+                  <template v-slot:activator="{ on }">
+                    <a v-on="on">
+                      员工入口
+                    </a>
+                  </template>
+
+                  <v-card>
+                    <v-card-title class="headline white--text" primary-title style="background-color:#232332
+                    
+                    
+                    
+                    
+                    
+                    
+                    ">
+                      <span class="flex-grow-1">员工入口</span>
+                      <v-btn
+                      color="grey darken-1"
+                      @click="dialog = false"
+                      icon>
+                      <v-icon>fas
+                          fa-times
+                      </v-icon>
+                  </v-btn>
+                    </v-card-title>
+
+                    <v-card-text class="pa-5">
+                      <div v-if="!enter">
+                          <v-text-field label="用户名" v-model="username" :rules="[v => v=='versal' || '用户名不正确']"></v-text-field>
+                          <v-text-field label="密码" type="password" v-model="password"  :rules="[v => v=='zeshi' || '密码不正确']"></v-text-field>
+                      </div>
+                     <div v-else-if="enter">
+                        <v-btn block class="mb-5" dark color="#232332" to="job_edit" @click="dialog = false">职位管理入口</v-btn>
+                        <v-btn block dark color="#232332" to="consultant_edit" @click="dialog = false">顾问管理入口</v-btn>
+                     </div>
+           
+                    </v-card-text>
+
+                    <v-divider></v-divider>
+
+                    <v-card-actions v-if="!enter">
+                      <div class="flex-grow-1"></div>
+                      <v-btn color="#232332" text @click="check">
+                        进入
+                      </v-btn>
+                    </v-card-actions>
+                  </v-card>
+                </v-dialog>
+              </li>
             </ul>
             <ul class="mx-auto" style="width:150px" v-else-if="language=='english'">
-              <li>Versal News</li>
-              <li v-for="(item,ed) in footer_nav_en.col4" :key="ed">
-                <router-link :to="item.route">{{item.name}}</router-link>
-              </li>
+              <div>
+                  <li>Versal News</li>
+                  <li v-for="(item,ed) in footer_nav_en.col4" :key="ed">
+                    <router-link :to="item.route">{{item.name}}</router-link>
+                  </li>
+        
+              </div>
+             
+      
             </ul>
           </v-col>
 
@@ -145,8 +201,21 @@
     components: {
 
     },
+    methods:{
+      check(){
+        if (this.username=='versal'&&this.password=='zeshi') {
+          this.enter='b' 
+          console.log(666);
+          console.log(this.enter); 
+        }
+      }
+    },
     data: () => ({
       drawer: false,
+      dialog:false,
+      enter:false,
+      username:'',
+      password:'',
       language: "中文",
       navigator: [{
           name: '首页',

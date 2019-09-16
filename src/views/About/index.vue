@@ -85,7 +85,6 @@
                                                             <h1 class="disp"><span class="primary--text">CEO</span>
                                                                 <span class="black--text">夏乾衡</span></h1>
                                                             <div class="caption pt-5">择仕中国创始人兼首席执行官</div>
-                                                            <div class="caption">中国人才交流市场化首批从业者</div>
                                                             <div class="caption pb-5">中国人才交流市场化首批从业者</div>
 
                                                             <p>夏乾衡先生带领择仕中国经12年发展共为500余家中外知名公司提供了上千名高端管理和专业人才，在人力资源服务领域获得了极好的市场商誉和客户口碑

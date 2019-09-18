@@ -36,7 +36,7 @@
                                         <v-col cols="12" md="6">
                                             <v-card class="pa-10" width="700" flat>
                                                 <v-card-text>
-                                                    <h1><span class="primary--text">招聘</span>
+                                                    <h1><span class="primary--text">工业招聘</span>
                                                         <span class="black--text">业务</span></h1>
                                                     <div class="caption py-5 font-weight-bold">十二年磨砺，领跑行业</div>
 
@@ -62,7 +62,7 @@
                                         <v-col cols="12" md="6">
                                             <v-card class="pa-10" width="700" dark color="transparent" flat>
                                                 <v-card-text>
-                                                    <h1><span class="primary--text">互联网</span>
+                                                    <h1><span class="primary--text">互联网招聘</span>
                                                         <span class="white--text">业务</span></h1>
                                                     <div class="caption py-5 font-weight-bold">优秀的互联网招聘解决方案提供商</div>
 
@@ -78,7 +78,7 @@
                                         </v-col>
                                         <v-col cols="12" md="6">
                                             <v-card width="700" elevation="5">
-                                                <v-img style="" src="../../assets/images/互联网.jpg" width="100%"></v-img>
+                                                <v-img src="../../assets/images/互联网.jpg" width="100%"></v-img>
                                             </v-card>
                                         </v-col>
 

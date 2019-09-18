@@ -269,15 +269,11 @@
       ],
       footer_nav: {
         col1: [{
-            name: '核心业务',
+            name: '历史沿革',
             route: '/about'
           },
           {
             name: '创始人',
-            route: '/about'
-          },
-          {
-            name: '历史沿革',
             route: '/about'
           },
         ],
@@ -295,10 +291,7 @@
         }],
       },
       footer_nav_en: {
-        col1: [{
-            name: 'BUSINESS',
-            route: '/about'
-          },
+        col1: [
           {
             name: 'HISTORY',
             route: '/about'

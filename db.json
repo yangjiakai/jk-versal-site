@@ -71,7 +71,8 @@
       "education1": "",
       "education2": "",
       "status": "有效",
-      "id": 2
+      "avatar":"../../assets/images/avatars/1.jpg",
+      "id": 1
     },
     {
       "name": "Crystal YAN",
@@ -94,7 +95,8 @@
       "education1": "同济大学翻译硕士",
       "education2": "",
       "status": "有效",
-      "id": 3
+      "avatar":"../../assets/images/avatars/2.jpg",
+      "id": 2
     },
     {
       "name": "Milla Sui",
@@ -117,7 +119,8 @@
       "education1": "",
       "education2": "",
       "status": "有效",
-      "id": 4
+      "avatar":"../../assets/images/avatars/3.jpg",
+      "id": 3
     },
     {
       "name": "Dora Lu",
@@ -140,7 +143,8 @@
       "education1": "",
       "education2": "",
       "status": "有效",
-      "id": 5
+      "avatar":"../../assets/images/avatars/4.jpg",
+      "id": 4
     }
     
   ]

@@ -67,7 +67,19 @@
                                                                                 <v-col cols="12" md="4" class="py-0">
                                                                                     <v-card color="#232332"
                                                                                         height="100%" dark>
-                                                                                        <v-img
+                                                                                        <div>
+                                                                                            <img src="../../assets/avatar.jpg" alt="" width="100%">
+                                                                                            <v-btn
+                                                                                            style="position: absolute;right:0;top:0"
+                                                                                            class="d-flex d-md-none"
+                                                                                            color="white darken-1"
+                                                                                            @click="dialog = false"
+                                                                                            icon>
+                                                                                            <v-icon>fas fa-times
+                                                                                            </v-icon>
+                                                                                        </v-btn>
+                                                                                        </div>
+                                                                                        <!-- <v-img
                                                                                             src="../../assets/avatar.jpg">
                                                                                             <v-btn
                                                                                                 class="float-right d-flex d-md-none"
@@ -77,7 +89,7 @@
                                                                                                 <v-icon>fas fa-times
                                                                                                 </v-icon>
                                                                                             </v-btn>
-                                                                                        </v-img>
+                                                                                        </v-img> -->
                                                                                         <div class="pa-5">
                                                                                             <h1 class="display-1 pa-2">
                                                                                                 {{consultant.name}}

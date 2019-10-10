@@ -6,7 +6,8 @@
                     <v-row class="fill-height mask flex-column" align="center" justify="center">
                         <img src="@/assets/images/logo.png" alt="" style="width: 200px">
                         <div class="top-decoration"></div>
-                        <div class="my-5 font-weight-black" style="font-size:5em"><span class="main-title">择仕中国</span></div>
+                        <div class="my-5 font-weight-black" style="font-size:5em"><span class="main-title">择仕中国</span>
+                        </div>
                         <div class="display-1 mb-5">VERSAL CHINA</div>
                         <div class="bottom-decoration"></div>
                         <vue-typed-js :strings="[slide]">
@@ -275,7 +276,8 @@
                             </v-row>
                             <v-row align="center">
                                 <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/wanke.png" alt="" max-width="120" class="mx-auto">
+                                    <v-img src="../../assets/images/home/wanke.png" alt="" max-width="120"
+                                        class="mx-auto">
                                     </v-img>
                                 </v-col>
                                 <v-col cols="6" md="2">
@@ -315,7 +317,8 @@
                                     </v-img>
                                 </v-col>
                                 <v-col cols="6" md="2">
-                                    <v-img src="../../assets/images/home/中国农业银行.png" alt="" max-width="120" class="mx-auto">
+                                    <v-img src="../../assets/images/home/中国农业银行.png" alt="" max-width="120"
+                                        class="mx-auto">
                                     </v-img>
                                 </v-col>
                                 <v-col cols="6" md="2">
@@ -372,6 +375,7 @@
                                     </div>
                                     <div class="display-1 mb-5">Get It In Touch</div>
                                     <div class="mb-5">地址：上海市徐汇区宜山路425号光启城2311室</div>
+                                    <div class="mb-5">Tel：021-31351011</div>
                                     <img src="../../assets/images/home/weixin.png" alt="">
                                     <div class="bottom-decoration"></div>
                                 </v-row>
@@ -411,7 +415,12 @@
         },
         components: {
             Map
-        }
+        },
+        created() {
+            // axios.get("/api/datas").then(res => {
+            //     // console.log(res.data);
+            // });
+        },
 
     };
 </script>
@@ -488,6 +497,4 @@
         background-size: cover;
         background-attachment: fixed;
     }
-
-
 </style>

@@ -1,23 +1,49 @@
-const path = require('path')
-const merge = require('deepmerge')
-function resolve(dir) {
-  return path.join(__dirname, dir)
-}
-// 项目的主要配置文件
 module.exports = {
-  chainWebpack: (config) => {
-    // 修改文件引入自定义路径
-    config.resolve.alias
-      .set('@', resolve('src'));
-    config.module
-      .rule('vue')
-      .use("vue-loader")
-      .tap(options => merge(options, {
-        transformAssetUrls: {
-          'parallax': 'src',
-          'v-img':'src'
+  publicPath: process.env.NODE_ENV === 'production' ? './' : './',
+  outputDir: 'dist',
+  assetsDir: 'static',
+  indexPath: 'index.html',
+  filenameHashing: true,
+  // proxy: {
+  //   '/api': {
+  //     target: 'http://106.15.189.144/api/',
+  //     changeOrigin: true,
+  //     ws: true,
+  //     pathRewrite: {
+  //       '^/api': ''
+  //     }
+  //   }
+  // }
+  devServer: {
+    proxy: {
+      '/api': {
+        target: 'http://106.15.189.144/api/',
+        // ws : true,
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': ''
         }
-      }))
-  },
+      }
+    }
+  }
 
-}
+  // devServer: {
+  //   open: true,
+  //   host: 'localhost',
+  //   port: 8080,
+  //   https: false,
+  //   hotOnly: false,
+  //   proxy: {
+  //     // 配置跨域
+  //     '/api': {
+  //       target: 'http://106.15.189.144/api/',
+  //       ws: true,
+  //       changOrigin: true,
+  //       pathRewrite: {
+  //         '^/api': ''
+  //       }
+  //     }
+  //   },
+  //   before: app => {}
+  // }
+};

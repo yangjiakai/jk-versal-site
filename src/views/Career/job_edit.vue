@@ -329,6 +329,7 @@
             editedIndex: -1,
             editedId: "",
             editedItem: {
+                id:0,
                 title: "",
                 location: "",
                 category: "",
@@ -354,6 +355,7 @@
                 status: "有效"
             },
             defaultItem: {
+                id: 0,
                 title: "",
                 location: "",
                 category: "",
@@ -427,6 +429,7 @@
                     this.updateJob(this.editedItem)
 
                 } else {
+                    this.editedItem.id = +new Date()
                     this.editedItem.date = this.getDate()
                     this.addJob(this.editedItem)
                 }

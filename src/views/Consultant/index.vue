@@ -248,6 +248,7 @@
     export default {
         data() {
             return {
+                imgUrl:"require('../../assets/avatar.jpg')",
                 dialog: false,
                 search: '',
                 filter: {},

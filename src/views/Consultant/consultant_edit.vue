@@ -16,7 +16,7 @@
                             <template v-slot:activator="{ on }">
                                 <v-btn color="primary" dark class="mb-2" v-on="on">顾问添加</v-btn>
                             </template>
-                            <v-card >
+                            <v-card>
                                 <v-toolbar flat>
                                     <span class="headline">{{ formTitle }}</span>
                                     <v-spacer></v-spacer>
@@ -149,6 +149,7 @@
 
 
 <script>
+   
     import {
         mapGetters,
         mapActions
@@ -176,7 +177,7 @@
                     class: '',
                     width: '100px',
                     sortable: false,
-                    
+
                 },
                 {
                     text: '邮箱',
@@ -198,7 +199,9 @@
                     text: '日期',
                     value: 'date',
                     width: '100px',
-                    class: 'primary--text'
+                    class: 'primary--text',
+                    sortable: true,
+                    // sort:(a,b)=>-1
                 },
                 {
                     text: '描述',
@@ -291,6 +294,7 @@
             editedIndex: -1,
             editedId: "",
             editedItem: {
+                id: "",
                 name: "",
                 name_en: "",
                 email: "",
@@ -310,9 +314,11 @@
                 keyword4: "",
                 education1: "",
                 education2: "",
-                status: "有效"
+                status: "有效",
+                avatar: "no avatar",
             },
             defaultItem: {
+                id: 0,
                 name: "",
                 name_en: "",
                 email: "",
@@ -332,7 +338,8 @@
                 keyword4: "",
                 education1: "",
                 education2: "",
-                status: "有效"
+                status: "有效",
+                avatar: "",
             },
         }),
 
@@ -365,7 +372,7 @@
             },
 
             deleteItem(item) {
-                confirm('确定要删除这条工作信息吗') && this.deleteConsultant(item.id)
+                confirm('确定要删除这条顾问信息吗') && this.deleteConsultant(item.id)
             },
 
             close() {
@@ -380,6 +387,7 @@
                 if (this.editedIndex > -1) {
                     this.updateConsultant(this.editedItem)
                 } else {
+                    this.editedItem.id = +new Date()
                     this.editedItem.date = this.getDate()
                     this.addConsultant(this.editedItem)
                 }
@@ -388,7 +396,7 @@
             getDate() {
                 let date = new Date()
                 return `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}`
-            }
+            },
         },
     }
 </script>

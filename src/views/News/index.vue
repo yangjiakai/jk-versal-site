@@ -23,7 +23,7 @@
         <v-container fluid>
             <v-row class="px-0">
                 <v-col>
-                    <v-card class="mx-auto mt-n12 pa-5"elavation="10">
+                    <v-card class="mx-auto mt-n12 pa-5" elavation="10">
                         <v-card width="1200" class="mx-auto" flat>
                             <v-card max-width="1200" class="mx-auto my-5" elevation="3" v-for="i in 10">
                                 <v-list-item>
@@ -43,7 +43,7 @@
                                 </v-card-text>
 
                                 <v-card-actions>
-                            
+
                                     <div class="flex-grow-1"></div>
                                     <v-chip>2019-10-11</v-chip>
                                     <v-btn icon>
@@ -73,31 +73,6 @@
             return {
                 dialog: false,
                 valid: true,
-                job: {
-                    title: "高级UI设计师",
-                    location: "深圳",
-                    category: "金融",
-                    type: "UI设计",
-                    company: "腾讯",
-                    salary: "30k",
-                    date: "2019-09-09",
-                    email: "403474473@qq.com",
-                    description: "暂无描述",
-                    duty1: "负责平台产品的PC端和移动端产品的UI与交互设计，产品整体风格设计，页面制作和流程优化。",
-                    duty2: "实现界面的视觉和美术设计方面的设计，重视细节方面的设计，如图标，主体，背景，配色等，制定产品用户界面风格。",
-                    duty3: "参与产品规划构思和创意过程，深刻理解产品目标和用户需求，重视用户体验。",
-                    duty4: "与产研沟通设计思路及落地实施方案，推进界面按照设计稿实现落地。",
-                    duty5: "暂无",
-                    request1: "3年以上PC端及移动端产品UI设计经验，完整的界面视觉风格设定经验",
-                    request2: "对用户习惯有一定的研究，具备一定的设计前瞻性，了解当下最流行的设计风格",
-                    request3: "具备良好的美术功底、色彩感觉和创意能力",
-                    request4: "善于与人沟通，具备良好的团队合作精神和执行力，具备高度责任感，有创新精神",
-                    request5: "5",
-                    company_name: "深圳技术有限公司",
-                    company_address: "深圳南山区腾讯大厦",
-                    company_description: "深圳市腾讯计算机系统有限公司成立于1998年11月，由马化腾、张志东、许晨晔、陈一丹、曾李青五位创始人共同创立。 是中国最大的互联网综合服务提供商之一，也是中国服务用户最多的互联网企业之一。",
-                    active: "true"
-                }
             }
         },
         methods: {

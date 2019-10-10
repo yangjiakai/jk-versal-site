@@ -120,7 +120,7 @@
               <li v-for="(item,id) in footer_nav.col4" :key="id">
                 <router-link :to="item.route">{{item.name}}</router-link>
               </li>
-              <li>
+              <!-- <li>
                 <v-dialog v-model="dialog" width="500" persistent>
                   <template v-slot:activator="{ on }">
                     <a v-on="on">
@@ -170,7 +170,7 @@
                     </v-card-actions>
                   </v-card>
                 </v-dialog>
-              </li>
+              </li> -->
             </ul>
             <ul class="mx-auto" style="width:150px" v-else-if="language=='english'">
               <div>
@@ -202,13 +202,13 @@
 
     },
     methods:{
-      check(){
-        if (this.username=='versal'&&this.password=='zeshi') {
-          this.enter='b' 
-          console.log(666);
-          console.log(this.enter); 
-        }
-      }
+      // check(){
+      //   if (this.username=='versal'&&this.password=='zeshi') {
+      //     this.enter='b' 
+      //     console.log(666);
+      //     console.log(this.enter); 
+      //   }
+      // }
     },
     data: () => ({
       drawer: false,

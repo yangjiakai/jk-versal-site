@@ -76,12 +76,13 @@
                     <v-item-group>
                         <v-container>
                             <v-row justify="center">
-                                <v-col cols="12" md="4" lg="2">
+                                <v-col cols="12" md="4" xl="2">
                                     <v-item v-slot:default="{ active, toggle }">
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card @click="toggle" :elevation="hover?10:2" class="text-center mx-auto"
                                                 max-width="250">
-                                                <v-img src="../../assets/images/home/pt1.png" class="mx-auto">
+                                                <!-- <v-img class="mx-auto" height="210" position="top center" > -->
+                                                    <v-img src="../../assets/images/home/pt1.png" class="mx-auto" height="210" position="top center">
                                                     <v-expand-transition>
                                                         <v-card-title class="fill-height white--text" align-end
                                                             v-if="hover" style="background-color:rgba(0, 0, 0, .5)">
@@ -100,12 +101,12 @@
                                     </v-item>
 
                                 </v-col>
-                                <v-col cols="12" md="4" lg="2">
+                                <v-col cols="12" md="4" xl="2">
                                     <v-item v-slot:default="{ active, toggle }">
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card @click="toggle" :elevation="hover?10:2" class="text-center mx-auto"
                                                 max-width="250">
-                                                <v-img src="../../assets/images/home/pt2.png" class="mx-auto">
+                                                <v-img src="../../assets/images/home/pt2.png" class="mx-auto" height="210" position="top center">
                                                     <v-expand-transition>
                                                         <v-card-title class="fill-height white--text" align-end
                                                             v-if="hover" style="background-color:rgba(0, 0, 0, .5)">
@@ -124,16 +125,17 @@
                                         </v-hover>
                                     </v-item>
                                 </v-col>
-                                <v-col cols="12" md="4" lg="2">
+                                <v-col cols="12" md="4" xl="2">
                                     <v-item v-slot:default="{ active, toggle }">
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card @click="toggle" :elevation="hover?10:2" class="text-center mx-auto"
                                                 max-width="250">
-                                                <v-img src="../../assets/images/home/pt5.jpg" class="mx-auto">
+                                                <v-img src="../../assets/images/home/pt5.jpg" class="mx-auto" height="210" position="top center">
                                                     <v-expand-transition>
                                                         <v-card-title class="fill-height white--text" align-end
                                                             v-if="hover" style="background-color:rgba(0, 0, 0, .5)">
-                                                            <p class="caption">曾就职于中软，东南融通，文思海辉，佰钧成等国内一流IT外包公司，并担任重要管理职位。同时，在Microsoft，Criteo等国际知名IT企业任职过。拥有丰富的IT，外包全行业的经验。
+                                                            <p class="caption">
+                                                                曾就职于中软，东南融通，文思海辉，佰钧成等国内一流IT外包公司，并担任重要管理职位。同时，在Microsoft，Criteo等国际知名IT企业任职过。拥有丰富的IT，外包全行业的经验。
                                                             </p>
                                                         </v-card-title>
                                                     </v-expand-transition>
@@ -147,12 +149,12 @@
                                         </v-hover>
                                     </v-item>
                                 </v-col>
-                                <v-col cols="12" md="4" lg="2">
+                                <v-col cols="12" md="4" xl="2">
                                     <v-item v-slot:default="{ active, toggle }">
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card @click="toggle" :elevation="hover?10:2" class="text-center mx-auto"
                                                 max-width="250">
-                                                <v-img src="../../assets/images/home/pt3.png" class="mx-auto">
+                                                <v-img src="../../assets/images/home/pt3.png" class="mx-auto" height="210" position="top center">
                                                     <v-expand-transition>
                                                         <v-card-title class="fill-height white--text" align-end
                                                             v-if="hover" style="background-color:rgba(0, 0, 0, .5)">
@@ -171,12 +173,12 @@
                                         </v-hover>
                                     </v-item>
                                 </v-col>
-                                <v-col cols="12" md="4" lg="2">
+                                <v-col cols="12" md="4" xl="2">
                                     <v-item v-slot:default="{ active, toggle }">
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card @click="toggle" :elevation="hover?10:2" class="text-center mx-auto"
                                                 max-width="250">
-                                                <v-img src="../../assets/images/home/pt4.png" class="mx-auto">
+                                                <v-img src="../../assets/images/home/pt4.png" class="mx-auto" height="210" position="top center">
                                                     <v-expand-transition>
                                                         <v-card-title class="fill-height white--text" align-end
                                                             v-if="hover" style="background-color:rgba(0, 0, 0, .5)">
@@ -198,7 +200,7 @@
                             </v-row>
                             <v-row>
                                 <v-spacer></v-spacer>
-                                <v-btn class="mr-5 mt-5" dark tile color="#232332" to="/consultant_en">寻找顾问</v-btn>
+                                <v-btn class="mr-5 mt-5" dark tile color="#232332" to="/consultant">寻找顾问</v-btn>
                             </v-row>
                         </v-container>
                     </v-item-group>

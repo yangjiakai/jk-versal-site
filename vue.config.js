@@ -4,46 +4,36 @@ module.exports = {
   assetsDir: 'static',
   indexPath: 'index.html',
   filenameHashing: true,
-  // proxy: {
-  //   '/api': {
-  //     target: 'http://106.15.189.144/api/',
-  //     changeOrigin: true,
-  //     ws: true,
-  //     pathRewrite: {
-  //       '^/api': ''
-  //     }
-  //   }
-  // }
-  devServer: {
-    proxy: {
-      '/api': {
-        target: 'http://106.15.189.144/api/',
-        // ws : true,
-        changeOrigin: true,
-        pathRewrite: {
-          '^/api': ''
-        }
-      }
-    }
-  }
-
   // devServer: {
-  //   open: true,
-  //   host: 'localhost',
-  //   port: 8080,
-  //   https: false,
-  //   hotOnly: false,
   //   proxy: {
-  //     // 配置跨域
   //     '/api': {
   //       target: 'http://106.15.189.144/api/',
-  //       ws: true,
-  //       changOrigin: true,
+  //       // ws : true,
+  //       changeOrigin: true,
   //       pathRewrite: {
   //         '^/api': ''
   //       }
   //     }
-  //   },
-  //   before: app => {}
+  //   }
   // }
+  chainWebpack: config => {
+    config.module
+      .rule('vue')
+      .use('vue-loader')
+      .loader('vue-loader')
+      .tap(options => {
+        return {
+          ...options,
+          //修复静态资源引用的问题 vue cli 2 => vue cli 3 升级之后配置项由 transformToRequire 改为 transformAssetUrls
+          transformAssetUrls: {
+            video: ['src', 'poster'],
+            source: 'src',
+            img: 'src',
+            image: 'xlink:href',
+            // 在这里添加需要使用静态资源的自定义元素
+            'v-img': 'src',
+          },
+        }
+      })
+  },
 };

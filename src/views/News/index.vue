@@ -25,21 +25,20 @@
                 <v-col>
                     <v-card class="mx-auto mt-n12 pa-5" elavation="10">
                         <v-card width="1200" class="mx-auto" flat>
-                            <v-card max-width="1200" class="mx-auto my-5" elevation="3" v-for="i in 10">
+                            <v-card max-width="1200" class="mx-auto my-5" elevation="3" v-for="item in this.news">
                                 <v-list-item>
                                     <v-list-item-avatar color="blue">
                                         <img src="../../assets/logo_icon.png" alt="">
                                     </v-list-item-avatar>
                                     <v-list-item-content>
-                                        <v-list-item-title class="headline">x新闻标题</v-list-item-title>
-                                        <v-list-item-subtitle>新闻副标题</v-list-item-subtitle>
+                                        <v-list-item-title class="headline">{{item.title}}</v-list-item-title>
+                                        <v-list-item-subtitle>{{item.id}}</v-list-item-subtitle>
                                     </v-list-item-content>
                                 </v-list-item>
 
-                                <v-img src="../../assets/images/外包.jpg" height="300"></v-img>
-
+                                <v-img :src="item.url" height="300"></v-img>
                                 <v-card-text>
-                                    择仕新闻新闻新闻新闻新闻新闻新闻新闻新闻内容
+                                    暂无新闻
                                 </v-card-text>
 
                                 <v-card-actions>
@@ -64,29 +63,27 @@
 </template>
 
 <script>
-    import {
-        mapGetters,
-        mapActions
-    } from 'vuex'
+    
     export default {
         data() {
             return {
-                dialog: false,
-                valid: true,
+                news:[
+                    {
+                        id:1,
+                        title:"暂无新闻",
+                        url:require('../../assets/images/外包.jpg')
+                    }
+                ]
             }
         },
         methods: {
-            ...mapActions(["fetchJobs"]),
-            openItem(item) {
-                this.job = Object.assign({}, item)
-                this.dialog = true
-            },
+         
         },
         computed: {
-            ...mapGetters(["allJobs"])
+          
         },
         created() {
-            this.fetchJobs()
+         
         }
 
     }

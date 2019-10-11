@@ -25,21 +25,21 @@
                     <v-col>
                         <v-card class="mx-auto mt-n12 pa-5"elavation="10">
                             <v-card width="1200" class="mx-auto" flat>
-                                <v-card max-width="1200" class="mx-auto my-5" elevation="3" v-for="i in 10">
+                                <v-card max-width="1200" class="mx-auto my-5" elevation="3" v-for="i in 1">
                                     <v-list-item>
                                         <v-list-item-avatar color="blue">
                                             <img src="../../assets/logo_icon.png" alt="">
                                         </v-list-item-avatar>
                                         <v-list-item-content>
-                                            <v-list-item-title class="headline">x新闻标题</v-list-item-title>
-                                            <v-list-item-subtitle>新闻副标题</v-list-item-subtitle>
+                                            <v-list-item-title class="headline">No News</v-list-item-title>
+                                            <v-list-item-subtitle>No News</v-list-item-subtitle>
                                         </v-list-item-content>
                                     </v-list-item>
     
                                     <v-img src="../../assets/images/外包.jpg" height="300"></v-img>
     
                                     <v-card-text>
-                                        择仕新闻新闻新闻新闻新闻新闻新闻新闻新闻内容
+                                        No News
                                     </v-card-text>
     
                                     <v-card-actions>

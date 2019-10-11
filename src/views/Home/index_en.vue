@@ -82,7 +82,7 @@
                                             <v-card @click="toggle" :elevation="hover?10:2" class="text-center mx-auto"
                                                 max-width="250">
                                                 <!-- <v-img class="mx-auto" height="210" position="top center" > -->
-                                                    <v-img src="../../assets/images/home/pt1.png" class="mx-auto" height="210" position="top center">
+                                                    <v-img src="../../assets/images/avatars/樊申哲.jpg" class="mx-auto" height="210" position="top center">
                                                     <v-expand-transition>
                                                         <v-card-title class="fill-height white--text" align-end
                                                             v-if="hover" style="background-color:rgba(0, 0, 0, .5)">
@@ -106,7 +106,7 @@
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card @click="toggle" :elevation="hover?10:2" class="text-center mx-auto"
                                                 max-width="250">
-                                                <v-img src="../../assets/images/home/pt2.png" class="mx-auto" height="210" position="top center">
+                                                <v-img src="../../assets/images/avatars/汤晓烨.jpg" class="mx-auto" height="210" position="top center">
                                                     <v-expand-transition>
                                                         <v-card-title class="fill-height white--text" align-end
                                                             v-if="hover" style="background-color:rgba(0, 0, 0, .5)">
@@ -130,7 +130,7 @@
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card @click="toggle" :elevation="hover?10:2" class="text-center mx-auto"
                                                 max-width="250">
-                                                <v-img src="../../assets/images/home/pt5.jpg" class="mx-auto" height="210" position="top center">
+                                                <v-img src="../../assets/images/avatars/孙磊.jpg" class="mx-auto" height="210" position="top center">
                                                     <v-expand-transition>
                                                         <v-card-title class="fill-height white--text" align-end
                                                             v-if="hover" style="background-color:rgba(0, 0, 0, .5)">
@@ -154,7 +154,7 @@
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card @click="toggle" :elevation="hover?10:2" class="text-center mx-auto"
                                                 max-width="250">
-                                                <v-img src="../../assets/images/home/pt3.png" class="mx-auto" height="210" position="top center">
+                                                <v-img src="../../assets/images/avatars/火颖杰.jpg" class="mx-auto" height="210" position="top center">
                                                     <v-expand-transition>
                                                         <v-card-title class="fill-height white--text" align-end
                                                             v-if="hover" style="background-color:rgba(0, 0, 0, .5)">
@@ -178,7 +178,7 @@
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card @click="toggle" :elevation="hover?10:2" class="text-center mx-auto"
                                                 max-width="250">
-                                                <v-img src="../../assets/images/home/pt4.png" class="mx-auto" height="210" position="top center">
+                                                <v-img src="../../assets/images/avatars/张楠.jpg" class="mx-auto" height="210" position="top center">
                                                     <v-expand-transition>
                                                         <v-card-title class="fill-height white--text" align-end
                                                             v-if="hover" style="background-color:rgba(0, 0, 0, .5)">

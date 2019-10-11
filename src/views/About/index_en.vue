@@ -73,7 +73,7 @@
                                             <v-row justify="center" align="center">
                                                 <v-col cols="12" md="6">
                                                     <v-card class="" height="469" width="469" elevation="20">
-                                                        <img src="../../assets/images/about/CEO.png" alt=""
+                                                        <img src="../../assets/images/about/CEO.jpg" alt=""
                                                             width="100%">
                                                     </v-card>
                                                 </v-col>

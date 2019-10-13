@@ -194,7 +194,7 @@
                                                                                                 </p>
 
                                                                                             </div>
-                                                                                            <div>
+                                                                                            <!-- <div>
                                                                                                 <h2
                                                                                                     class="my-8 black--text">
                                                                                                     <i
@@ -212,7 +212,7 @@
                                                                                                         class="fas fa-check-circle mx-3"></i>
                                                                                                     <span>{{consultant.education2}}</span>
                                                                                                 </p>
-                                                                                            </div>
+                                                                                            </div> -->
                                                                                         </v-card-text>
                                                                                     </v-card>
                                                                                 </v-col>
@@ -388,7 +388,7 @@
                         "name": "Elena YIN",
                         "name_en": "Elena YIN",
                         "email": "",
-                        "position": "择仕中国互联网Team Leader",
+                        "position": "Team Leader",
                         "location": "上海",
                         "date": "2019-9-16",
                         "description": "世界500强高科技公司、消费品公司、汽车零部件公司中高端人才搜寻经验Sourcing模块丰富培训经验",
@@ -412,7 +412,7 @@
                         "name": "Crystal YAN",
                         "name_en": "Crystal YAN",
                         "email": "",
-                        "position": "择仕中国制造行业MC",
+                        "position": "MC",
                         "location": "上海",
                         "date": "2019-9-16",
                         "description": "深耕500强车企商务和研发高端职位擅长精准定位职位需求并实现快速交付，择仕中国最快速达成百万顾问称号顾问之一",
@@ -436,7 +436,7 @@
                         "name": "Milla Sui",
                         "name_en": "Milla Sui",
                         "email": "",
-                        "position": "择仕中国MI团队MC",
+                        "position": "MC",
                         "location": "上海",
                         "date": "2019-9-16",
                         "description": "知名上市公司5年高端人才搜寻经验,擅长制造业，汽车行业，消费品等领域人才搜寻多次荣获择仕中国Top Leader及百万顾问称号",

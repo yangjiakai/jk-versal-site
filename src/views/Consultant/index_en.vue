@@ -168,7 +168,7 @@
                                                                                                 </p>
 
                                                                                             </div>
-                                                                                            <div>
+                                                                                            <!-- <div>
                                                                                                 <h2
                                                                                                     class="my-8 black--text">
                                                                                                     <i
@@ -193,7 +193,7 @@
                                                                                                     <span>{{consultant.experience3}}</span>
                                                                                                 </p>
 
-                                                                                            </div>
+                                                                                            </div> -->
                                                                                             <!-- <div>
                                                                                                 <h2
                                                                                                     class="my-8 black--text">
@@ -299,7 +299,7 @@
                         "experience2": "海德堡销售总监",
                         "experience3": "CIPC注册国际心理咨询师",
                         "field1": "制造业",
-                        "field2": "德资",
+                        "field2": "领导力",
                         "field3": "",
                         "keyword1": "销售总监",
                         "keyword2": "领导力",
@@ -395,9 +395,9 @@
                         "experience1": "6年工作经验",
                         "experience2": "",
                         "experience3": "",
-                        "field1": "高科技公司",
-                        "field2": "消费品公司",
-                        "field3": "汽车零部件",
+                        "field1": "互联网行业",
+                        "field2": "",
+                        "field3": "",
                         "keyword1": "6年工作经验",
                         "keyword2": "高端人才搜寻",
                         "keyword3": "",

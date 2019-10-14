@@ -31,8 +31,8 @@
                             </v-toolbar>
                             <v-list two-line shaped>
                                 <v-list-item-group>
-                                    <template v-for="(item,i) in allJobs">
-                                        <v-list-item @click="openItem(item)" :key="i">
+                                    <template v-for="(item,i) in jobList.jobs">
+                                        <v-list-item @click="openItem(item)" :key="item.id">
                                             <v-list-item-avatar>
                                                 <v-icon>far fa-bookmark</v-icon>
                                             </v-list-item-avatar>
@@ -44,14 +44,15 @@
                                                     </p>
                                                 </v-list-item-title>
                                                 <v-list-item-subtitle>
-                                                    <i class="fas fa-map-marker-alt p">{{item.location}}</i>
-                                                    <i class="fas fa-map-marker-alt p ml-5">{{item.category}}</i>
+                                                    <i class="fas fa-map-marker-alt" v-if="item.location">
+                                                        {{item.location}}</i>
+                                                    <i class="fab fa-gg ml-5" v-if="item.category">
+                                                        {{item.category}}</i>
                                                 </v-list-item-subtitle>
                                             </v-list-item-content>
                                             <v-list-item-action>
-                                                <v-dialog v-model="dialog" persistent max-width>
+                                                <v-dialog v-model="dialog">
                                                     <template v-slot:activator="{ on }">
-
                                                         <v-btn color="#232332" v-on="on" icon @click="openItem(item)">
                                                             <v-icon>fas fa-share-alt-square</v-icon>
                                                         </v-btn>
@@ -60,7 +61,9 @@
                                                         <v-row style="background-color:#232332">
                                                             <v-col cols="12" md="8">
                                                                 <v-card class="pa-5" flat dark color="transparent">
-                                                                    <h1 class="pa-3">{{job.title}}</h1>
+                                                                    <h1 class="pa-3">{{job.title}}<span
+                                                                            class="pl-3 title">{{job.salary}}</span>
+                                                                    </h1>
                                                                     <p>
                                                                         <i class="fas fa-project-diagram mx-3"></i>
                                                                         <span class="grey--text">{{job.category}}</span>
@@ -75,10 +78,13 @@
                                                             <v-col cols="12" md="4" class="text-right">
                                                                 <v-spacer></v-spacer>
 
-                                                                <v-btn color="white darken-1" icon
+                                                                <!-- <v-btn color="white darken-1" icon
                                                                     @click="dialog = false">
                                                                     <v-icon>fas fa-times</v-icon>
-                                                                </v-btn>
+                                                                </v-btn> -->
+                                                                <v-icon @click="dialog = false" class="white--text">fas
+                                                                    fa-times</v-icon>
+                                                                <!-- <v-btn color="success">text</v-btn> -->
 
                                                             </v-col>
                                                         </v-row>
@@ -94,7 +100,7 @@
                                                                                 {{job.description}}
                                                                             </p>
                                                                         </div>
-                                                                        <div>
+                                                                        <div v-if="job.duty1">
                                                                             <h2 class="my-8 black--text"><i
                                                                                     class="fas fa-bolt mx-3"></i>岗位职责
                                                                             </h2>
@@ -124,7 +130,7 @@
                                                                                 <span>{{job.duty5}}</span>
                                                                             </p>
                                                                         </div>
-                                                                        <div>
+                                                                        <div v-if="job.request1">
                                                                             <h2 class="my-8 black--text"><i
                                                                                     class="fas fa-book mx-3"></i>任职要求
                                                                             </h2>
@@ -154,15 +160,14 @@
                                                                                 <span>{{job.request5}}</span>
                                                                             </p>
                                                                         </div>
-                                                                        <div>
+                                                                        <div v-if="job.company">
                                                                             <h2 class="my-8 black--text">
                                                                                 <i class="fas fa-map mx-3"></i>公司介绍
                                                                             </h2>
                                                                             <p>
-                                                                                <b
-                                                                                    class="ml-3">公司名称：</b>{{job.company_name}}
+                                                                                <b class="ml-3">公司名称：</b>{{job.company}}
                                                                             </p>
-                                                                            <p>
+                                                                            <!-- <p>
                                                                                 <b
                                                                                     class="ml-3">公司地址：</b>{{job.company_address}}
                                                                             </p>
@@ -172,14 +177,14 @@
                                                                                     class="ml-3">公司描述：</b>
                                                                                 <span
                                                                                     class="d-table-cell">{{job.company_description}}</span>
-                                                                            </p>
+                                                                            </p> -->
                                                                         </div>
                                                                     </v-card-text>
                                                                 </v-card>
                                                             </v-col>
 
-                                                            <v-col cols="12" md="4">
-                                                                <v-card class="pa-5 fill-height" outlined>
+                                                            <!-- <v-col cols="12" md="4">
+                                                                <v-card class="pa-5 fill-height" outlined >
                                                                     <v-row>
                                                                         <v-col>
 
@@ -206,6 +211,50 @@
                                                                                         required
                                                                                         :rules="[v => !!v || '邮箱格式不正确']"
                                                                                         color="#353550 " placeholder=" "
+                                                                                        prepend-icon="fas fa-envelope">
+                                                                                    </v-text-field>
+                                                                                    <v-file-input label="上传简历" required
+                                                                                        hint="小于5M,PDF或者Doc格式"
+                                                                                        placeholder=" " outlined
+                                                                                        color="#353550 " class="my-2">
+                                                                                    </v-file-input>
+                                                                                    <v-btn block dark color="#353550 ">
+                                                                                        <v-icon class="mr-3">far
+                                                                                            fa-envelope</v-icon>确认并发送
+                                                                                    </v-btn>
+                                                                                </v-form>
+                                                                            </v-card>
+
+                                                                        </v-col>
+                                                                    </v-row>
+                                                                </v-card>
+                                                            </v-col> -->
+                                                            <v-col cols="12" md="4">
+                                                                <v-card class="pa-5 fill-height" outlined>
+                                                                    <v-row>
+                                                                        <v-col>
+                                                                            <v-card max-width="500" class="mx-auto pa-5"
+                                                                                my-5>
+                                                                                <v-card-title>
+                                                                                    <h3 class="my-5" style="color: #353550">申请职位</h3>
+                                                         
+                                                                                    <p>发送简历至{{job.email}}</p>
+                                                                                </v-card-title>
+                                                                                
+                                                                                <v-form ref="form" lazy-validation>
+                                                                                    <v-text-field label="姓名（必需）"
+                                                                                        hint="中文名" color="#353550 "
+                                                                                        placeholder=" "
+                                                                                        prepend-icon="fas fa-user-circle">
+                                                                                    </v-text-field>
+                                                                                    <v-text-field label="电话号码"
+                                                                                        color="#353550 " placeholder=" "
+                                                                                        prepend-icon="fas fa-phone-volume">
+
+                                                                                    </v-text-field>
+                                                                                    <v-text-field label="邮箱（必需）"
+                                                                                        required color="#353550 "
+                                                                                        placeholder=" "
                                                                                         prepend-icon="fas fa-envelope">
                                                                                     </v-text-field>
                                                                                     <v-file-input label="上传简历" required
@@ -252,6 +301,8 @@
         mapGetters,
         mapActions
     } from 'vuex'
+
+    import jobs from './jobs.js'
     export default {
         data() {
             return {
@@ -281,21 +332,28 @@
                     company_address: "深圳南山区腾讯大厦",
                     company_description: "深圳市腾讯计算机系统有限公司成立于1998年11月，由马化腾、张志东、许晨晔、陈一丹、曾李青五位创始人共同创立。 是中国最大的互联网综合服务提供商之一，也是中国服务用户最多的互联网企业之一。",
                     active: "true"
-                }
+                },
+                jobList: []
+
             }
         },
         methods: {
-            ...mapActions(["fetchJobs"]),
+            // ...mapActions(["fetchJobs"]),
             openItem(item) {
                 this.job = Object.assign({}, item)
                 this.dialog = true
             },
         },
         computed: {
-            ...mapGetters(["allJobs"])
+            // ...mapGetters(["allJobs"])
+
         },
         created() {
-            this.fetchJobs()
+            // this.fetchJobs()
+            this.jobList = Object.assign({}, jobs)
+
+
+
         }
 
     }

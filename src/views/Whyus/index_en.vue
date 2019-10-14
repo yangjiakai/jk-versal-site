@@ -110,6 +110,38 @@
                                                 </v-card>
                                             </v-col>
                                         </v-row>
+
+                                        <v-row style="background-image:linear-gradient(0deg,#141E30,#243B55)">
+                                            <v-col>
+                                                <v-card width="1600" class="mx-auto py-12" color="transparent" flat>
+                                                    <v-row justify="center" align="center">
+                                                        <v-col cols="12" md="6">
+                                                            <v-card class="pa-10" width="700" dark color="transparent" flat>
+                                                                <v-card-text>
+                                                                    <h1><span class="primary--text">其他</span>
+                                                                        <span class="white--text">业务</span></h1>
+                                                                    <div class="title py-5 font-weight-bold">人才地图</div>
+                
+                                                                    <p>猎头顾问通过系统性的行业人才盘点、薪酬福利架构咨询、对标公司架构调研、奖金及股权机制调研等帮助企业了解市场情况及对标公司人才情况。</p>
+                                                                    <div class="title py-5 font-weight-bold">培训业务</div>
+                                                                    <p>针对企业管理层、招聘团队、内部运营等方面技能，提供专业策略及技能系列培训。 全方位的帮助企业达成降本、提效、增利
+                                                                    </p>
+                                                                    <div class="title py-5 font-weight-bold">校园招聘</div>
+                                                                    <p>针对节省成本，提升校招数量及质量的需求，提供以结果为导向的校园猎头、校园招聘会、雇主品牌传播。 
+                                                                    </p>
+                                                                </v-card-text>
+                                                            </v-card>
+                                                        </v-col>
+                                                        <v-col cols="12" md="6">
+                                                            <v-card width="700" elevation="5">
+                                                                <v-img src="../../assets/images/other.jpg" width="100%"></v-img>
+                                                            </v-card>
+                                                        </v-col>
+                
+                                                    </v-row>
+                                                </v-card>
+                                            </v-col>
+                                        </v-row>
     
                                     </v-card>
                                 </v-col>

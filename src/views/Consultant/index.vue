@@ -54,7 +54,7 @@
                                                     <div class="caption grey--text">{{item.keyword4}}</div>
                                                     <div class="text-left">
 
-                                                        <v-dialog v-model="dialog" full-width>
+                                                        <v-dialog v-model="dialog" >
                                                             <template v-slot:activator="{ on }">
                                                                 <v-btn color="blue" dark icon v-on="on" class=" mx-2">
                                                                     <v-icon>fas fa-external-link-alt</v-icon>
@@ -113,7 +113,7 @@
                                                                                     </v-card>
                                                                                 </v-col>
                                                                                 <v-col cols="12" md="8" class="py-0">
-                                                                                    <v-card>
+                                                                                    <v-card height="100%">
                                                                                         <v-card-text>
                                                                                             <div>
                                                                                                 <div style="overflow: hidden"
@@ -168,7 +168,7 @@
                                                                                                 </p>
 
                                                                                             </div>
-                                                                                            <div>
+                                                                                            <div v-if="consultant.experience1">
                                                                                                 <h2
                                                                                                     class="my-8 black--text">
                                                                                                     <i
@@ -395,9 +395,9 @@
                         "experience1": "6年工作经验",
                         "experience2": "",
                         "experience3": "",
-                        "field1": "高科技公司",
-                        "field2": "消费品公司",
-                        "field3": "汽车零部件",
+                        "field1": "互联网行业",
+                        "field2": "",
+                        "field3": "",
                         "keyword1": "6年工作经验",
                         "keyword2": "高端人才搜寻",
                         "keyword3": "",

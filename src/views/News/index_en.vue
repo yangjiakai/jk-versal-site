@@ -306,7 +306,7 @@
         }
     
         .article{
-            padding: 70px;
+            padding: 10px;
         }
     
         .article p {

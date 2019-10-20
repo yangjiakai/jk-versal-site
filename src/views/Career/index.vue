@@ -97,7 +97,7 @@
                             </v-col>
                         </v-row>
                         <v-row>
-                            <v-col cols="12" md="8">
+                            <v-col cols="12" md="7">
                                 <v-card class="pa-5" outlined>
                                     <v-card-text>
                                         <div>
@@ -176,17 +176,22 @@
                             </v-col>
     
     
-                            <v-col cols="12" md="4">
+                            <v-col cols="12" md="5">
                                 <v-card class="pa-5 fill-height" outlined>
                                     <v-row>
                                         <v-col>
                                             <v-card max-width="500" class="mx-auto pa-5" min-height="600" my-5>
-                                                <v-card-title>
-                                                    <h3 class="my-5" style="color: #353550">申请职位</h3>
-    
-                                                    <p>发送简历至{{job.email}}</p>
-                                                </v-card-title>
-    
+                                                <h1 class="my-5 mx-5" style="color: #353550">职位申请</h1>
+                                                <v-divider class="ma-5"></v-divider>
+                                                <p style="font-size: 20px"  class="mx-5">请发送简历至邮箱：<b>{{job.email}}</b></p>
+                 
+                                                <v-divider class="ma-5"></v-divider>
+                                                <p  class="mx-5 grey--text">
+                                                        ※ 了解更多职位信息 <span>请访问择仕官方公众号</span> 
+                                                    </p>
+                                                <v-img src="../../assets/wechatCode.jpg" max-width="300px">
+                                                </v-img>
+<!--     
                                                 <v-form ref="form" lazy-validation>
                                                     <v-text-field label="姓名（必需）" hint="中文名" color="#353550 " placeholder=" "
                                                         prepend-icon="fas fa-user-circle">
@@ -205,7 +210,7 @@
                                                         <v-icon class="mr-3">far
                                                             fa-envelope</v-icon>确认并发送
                                                     </v-btn>
-                                                </v-form>
+                                                </v-form> -->
                                             </v-card>
     
                                         </v-col>

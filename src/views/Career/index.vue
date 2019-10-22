@@ -263,7 +263,7 @@
             created() {
                 // this.fetchJobs()
                 this.jobList = Object.assign({}, jobs.jobs)
-                console.log(jobList);
+                // console.log(this.jobList);
             }
     
         }

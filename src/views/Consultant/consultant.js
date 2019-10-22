@@ -1,5 +1,5 @@
 export default {
-    consultant: [{
+    consultants: [{
             "name": "孙磊",
             "name_en": "TOM SUN",
             "email": "",
@@ -30,7 +30,7 @@ export default {
             "position": "猎头业务合伙人",
             "location": "上海",
             "date": "2019-9-16",
-            "description": "拥有十余年德资企业管理层经验，曾任海德堡销售总监，交通大学本科及交通大学工商管理学硕士，CIPC注册国际心理咨询师，五维教练领导力认证讲师，领导力方面颇有建树",
+            "description": "拥有十余年德资企业管理经验，交通大学工商管理学硕士，具有五维教练领导力认证。进入猎头行业带团队四年，率领大制造行业团队连续三年年业绩增长50%，善于培养百万顾问，其中四个顾问都成为公司中、高层管理人员",
             "experience1": "十余年德资企业管理层经验",
             "experience2": "海德堡销售总监",
             "experience3": "CIPC注册国际心理咨询师",

@@ -89,14 +89,14 @@
                                                         <v-card-title class="fill-height white--text" align-end
                                                             v-if="hover" style="background-color:rgba(0, 0, 0, .5)">
                                                             <p class="caption">
-                                                                拥有十余年德资企业管理层经验，曾任海德堡销售总监，交通大学本科及交通大学工商管理学硕士，CIPC注册国际心理咨询师，五维教练领导力认证讲师，领导力方面颇有建树
+                                                                拥有十余年德资企业管理经验，交通大学工商管理学硕士，具有五维教练领导力认证。进入猎头行业四年，率领大制造行业团队连续三年年业绩增长50%，善于培养百万顾问，其中四个顾问都成为公司中、高层管理人员
                                                             </p>
                                                         </v-card-title>
                                                     </v-expand-transition>
                                                 </v-img>
                                                 <v-card-text>
-                                                    <h3 class="my-5">猎头业务合伙人/<span class="blue--text">制造行业</span></h3>
-                                                    <h2 class="my-5">LESLIE 樊申哲</h2>
+                                                    <h3 class="my-5">猎头业务合伙人/<span class="blue--text">大制造行业</span></h3>
+                                                    <h2 class="my-5">LESLIE FAN 樊申哲</h2>
                                                 </v-card-text>
                                             </v-card>
                                         </v-hover>
@@ -120,7 +120,7 @@
                                                 </v-img>
                                                 <v-card-text>
                                                     <h3 class="my-5">猎头业务合伙人/<span class="blue--text">互联网行业</span></h3>
-                                                    <h2 class="my-5">VERA 汤晓烨</h2>
+                                                    <h2 class="my-5">VERA TANG 汤晓烨</h2>
 
                                                 </v-card-text>
                                             </v-card>
@@ -143,7 +143,7 @@
                                                     </v-expand-transition>
                                                 </v-img>
                                                 <v-card-text>
-                                                    <h3 class="my-5">外包业务负责人/<span class="blue--text">IT,全行业</span></h3>
+                                                    <h3 class="my-5">外包业务合伙人</h3>
                                                     <h2 class="my-5">TOM SUN 孙磊</h2>
 
                                                 </v-card-text>
@@ -168,7 +168,7 @@
                                                 </v-img>
                                                 <v-card-text>
                                                     <h3 class="my-5">猎头业务合伙人/<span class="blue--text">消费品行业</span></h3>
-                                                    <h2 class="my-5">JASON 火颖杰</h2>
+                                                    <h2 class="my-5">JASON HUO火颖杰</h2>
 
                                                 </v-card-text>
                                             </v-card>
@@ -191,8 +191,8 @@
                                                     </v-expand-transition>
                                                 </v-img>
                                                 <v-card-text>
-                                                    <h3 class="my-5">区域合伙人/<span class="blue--text">互联网行业</span></h3>
-                                                    <h2 class="my-5">ELLA 张楠</h2>
+                                                    <h3 class="my-5">区域合伙人</h3>
+                                                    <h2 class="my-5">ELLA ZHANG 张楠</h2>
 
                                                 </v-card-text>
                                             </v-card>
@@ -202,7 +202,7 @@
                             </v-row>
                             <v-row>
                                 <v-spacer></v-spacer>
-                                <v-btn class="mr-5 mt-5" dark tile color="#232332" to="/consultant">寻找顾问</v-btn>
+                                <v-btn class="mr-5 mt-5" dark  color="#232332" to="/consultant">寻找顾问</v-btn>
                             </v-row>
                         </v-container>
                     </v-item-group>
@@ -250,7 +250,7 @@
                                 <v-col>
                                     <v-card class="text-center" flat>
                                         <h1 class="my-5"><span
-                                                class="red--text font-weight-black mx-2 ">300+</span>优质合作客户</h1>
+                                                class="red--text font-weight-black mx-2 ">500+</span>优质合作客户</h1>
                                         <p class="grey--text mb-8">
                                             我们拥有优质的全人力资源领域客户</p>
                                     </v-card>
@@ -446,7 +446,7 @@
     }
 
     .top-decoration {
-        border: 1px solid rgba(255, 255, 255, 0.7);
+        border: 1px solid rgba(104, 48, 48, 0.7);
         border-bottom: none;
         height: 5rem;
         width: 15rem;
@@ -462,7 +462,7 @@
         content: "";
         position: absolute;
         top: -50px;
-        left: -70px;
+        left: -40px;
         width: 150px;
         height: 150px;
         border-radius: 75px;

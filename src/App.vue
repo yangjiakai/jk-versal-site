@@ -7,10 +7,10 @@
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items v-if="language=='中文'" class="d-none d-md-flex">
-        <v-btn text v-for="(item,la) in navigator" :to="item.route" :key="la">{{item.name}}</v-btn>
+        <v-btn text v-for="(item,index) in navigator" :to="item.route" :key="index">{{item.name}}</v-btn>
       </v-toolbar-items>
       <v-toolbar-items v-else-if="language=='english'" class="d-none d-md-flex">
-        <v-btn text v-for="(item,lb) in navigator_en" :to="item.route" :key="lb">{{item.name}}</v-btn>
+        <v-btn text v-for="(item,index) in navigator_en" :to="item.route" :key="index">{{item.name}}</v-btn>
       </v-toolbar-items>
       <v-btn-toggle v-model="language" mandatory light class="mx-3">
         <v-btn text value="中文" to="/" small>
@@ -28,8 +28,8 @@
       <v-list v-if="language=='中文'">
         <v-subheader>导航</v-subheader>
         <v-list-item-group>
-          <template v-for="(item,lc) in navigator">
-            <v-list-item :to="item.route" :key="lc">
+          <template v-for="(item,index) in navigator">
+            <v-list-item :to="item.route" :key="index">
               <v-list-item-icon>
                 <v-icon>fab fa-ethereum</v-icon>
               </v-list-item-icon>
@@ -37,15 +37,15 @@
                 <v-list-item-subtitle v-text="item.name"></v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
-            <v-divider :key="lc"></v-divider>
+            <v-divider :key="index"></v-divider>
           </template>
         </v-list-item-group>
       </v-list>
       <v-list v-else-if="language=='english'">
         <v-subheader>Navigator</v-subheader>
         <v-list-item-group>
-          <template v-for="(item,ld) in navigator_en">
-            <v-list-item :to="item.route" :key="ld">
+          <template v-for="(item,index) in navigator_en">
+            <v-list-item :to="item.route" :key="index">
               <v-list-item-icon>
                 <v-icon>fab fa-ethereum</v-icon>
               </v-list-item-icon>
@@ -53,7 +53,7 @@
                 <v-list-item-subtitle v-text="item.name"></v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
-            <v-divider :key="ld"></v-divider>
+            <v-divider :key="index"></v-divider>
           </template>
         </v-list-item-group>
       </v-list>
@@ -75,13 +75,13 @@
           <v-col cols="6" md="3">
             <ul class="mx-auto" style="width:150px" v-if="language=='中文'">
               <li>企业情报</li>
-              <li v-for="(item,ia) in footer_nav.col1" :key="ia">
+              <li v-for="(item,index) in footer_nav.col1" :key="index">
                 <router-link :to="item.route">{{item.name}}</router-link>
               </li>
             </ul>
             <ul class="mx-auto" style="width:150px" v-else-if="language=='english'">
               <li>About</li>
-              <li v-for="(item,ea) in footer_nav_en.col1" :key="ea">
+              <li v-for="(item,index) in footer_nav_en.col1" :key="index">
                 <router-link :to="item.route">{{item.name}}</router-link>
               </li>
             </ul>
@@ -89,13 +89,13 @@
           <v-col cols="6" md="3">
             <ul class="mx-auto" style="width:150px" v-if="language=='中文'">
               <li>寻找顾问</li>
-              <li v-for="(item,ib) in footer_nav.col2" :key="ib">
+              <li v-for="(item,index) in footer_nav.col2" :key="index">
                 <router-link :to="item.route">{{item.name}}</router-link>
               </li>
             </ul>
             <ul class="mx-auto" style="width:150px" v-else-if="language=='english'">
               <li>Consultant</li>
-              <li v-for="(item,e2) in footer_nav_en.col2" :key="e2">
+              <li v-for="(item,index) in footer_nav_en.col2" :key="index">
                 <router-link :to="item.route">{{item.name}}</router-link>
               </li>
             </ul>
@@ -103,13 +103,13 @@
           <v-col cols="6" md="3">
             <ul class="mx-auto" style="width:150px" v-if="language=='中文'">
               <li>工作机会</li>
-              <li v-for="(item,ic) in footer_nav.col3" :key="ic">
+              <li v-for="(item,index) in footer_nav.col3" :key="index">
                 <router-link :to="item.route">{{item.name}}</router-link>
               </li>
             </ul>
             <ul class="mx-auto" style="width:150px" v-else-if="language=='english'">
               <li>Career</li>
-              <li v-for="(item,ec) in footer_nav_en.col3" :key="ec">
+              <li v-for="(item,index) in footer_nav_en.col3" :key="index">
                 <router-link :to="item.route">{{item.name}}</router-link>
               </li>
             </ul>
@@ -117,65 +117,14 @@
           <v-col cols="6" md="3">
             <ul class="mx-auto" style="width:150px" v-if="language=='中文'">
               <li>择仕新闻</li>
-              <li v-for="(item,id) in footer_nav.col4" :key="id">
+              <li v-for="(item,index) in footer_nav.col4" :key="index">
                 <router-link :to="item.route">{{item.name}}</router-link>
               </li>
-              <!-- <li>
-                <v-dialog v-model="dialog" width="500" persistent>
-                  <template v-slot:activator="{ on }">
-                    <a v-on="on">
-                      员工入口
-                    </a>
-                  </template>
-
-                  <v-card>
-                    <v-card-title class="headline white--text" primary-title style="background-color:#232332
-                    
-                    
-                    
-                    
-                    
-                    
-                    ">
-                      <span class="flex-grow-1">员工入口</span>
-                      <v-btn
-                      color="grey darken-1"
-                      @click="dialog = false"
-                      icon>
-                      <v-icon>fas
-                          fa-times
-                      </v-icon>
-                  </v-btn>
-                    </v-card-title>
-
-                    <v-card-text class="pa-5">
-                      <div v-if="!enter">
-                          <v-text-field label="用户名" v-model="username" :rules="[v => v=='versal' || '用户名不正确']"></v-text-field>
-                          <v-text-field label="密码" type="password" v-model="password"  :rules="[v => v=='zeshi' || '密码不正确']"></v-text-field>
-                      </div>
-                     <div v-else-if="enter">
-                        <v-btn block class="mb-5" dark color="#232332" to="job_edit" @click="dialog = false">职位管理入口</v-btn>
-                        <v-btn block dark color="#232332" to="consultant_edit" @click="dialog = false">顾问管理入口</v-btn>
-                     </div>
-           
-                    </v-card-text>
-
-                    <v-divider></v-divider>
-
-                    <v-card-actions v-if="!enter">
-                      <div class="flex-grow-1"></div>
-                      <v-btn color="#232332" text @click="check">
-                        进入
-                      </v-btn>
-                    </v-card-actions>
-                  </v-card>
-                </v-dialog>
-              </li> -->
             </ul>
             <ul class="mx-auto" style="width:150px" v-else-if="language=='english'">
               <div>
                   <li>Versal News</li>
-                  <li v-for="(item,ed) in footer_nav_en.col4" :key="ed">
+                  <li v-for="(item,index) in footer_nav_en.col4" :key="index">
                     <router-link :to="item.route">{{item.name}}</router-link>
                   </li>
         

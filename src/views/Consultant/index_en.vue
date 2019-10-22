@@ -106,7 +106,7 @@
                                                     <div class="subtitle-2 pa-2">
                                                         <i class="fas fa-map-marker-alt mr-2"></i>{{consultant.location}}
                                                     </div>
-                                                    <div class="subtitle-2 pa-2">
+                                                    <div class="subtitle-2 pa-2" v-if="consultant.email">
                                                         <i class="far fa-envelope  mr-2"></i>{{consultant.email}}
                                                     </div>
                                                 </div>
@@ -187,10 +187,10 @@
     </template>
     
     <script>
-        import {
-            mapGetters,
-            mapActions
-        } from 'vuex'
+        // import {
+        //     mapGetters,
+        //     mapActions
+        // } from 'vuex'
         export default {
             data() {
                 return {
@@ -326,120 +326,23 @@
                             "status": "有效",
                             "id": 9,
                             "imgUrl": require('../../assets/images/avatars/张楠.jpg')
-                        },
-                        // {
-    
-                        //     "name": "Elena YIN",
-                        //     "name_en": "Elena YIN",
-                        //     "email": "",
-                        //     "position": "Team Leader",
-                        //     "location": "上海",
-                        //     "date": "2019-9-16",
-                        //     "description": "世界500强高科技公司、消费品公司、汽车零部件公司中高端人才搜寻经验Sourcing模块丰富培训经验",
-                        //     "experience1": "6年工作经验",
-                        //     "experience2": "",
-                        //     "experience3": "",
-                        //     "field1": "互联网行业",
-                        //     "field2": "",
-                        //     "field3": "",
-                        //     "keyword1": "6年工作经验",
-                        //     "keyword2": "高端人才搜寻",
-                        //     "keyword3": "",
-                        //     "keyword4": "",
-                        //     "education1": "",
-                        //     "education2": "",
-                        //     "status": "有效",
-                        //     "id": 1,
-                        //     "imgUrl": require('../../assets/images/avatars/Elena.jpg')
-                        // },
-                        // {
-                        //     "name": "Crystal YAN",
-                        //     "name_en": "Crystal YAN",
-                        //     "email": "",
-                        //     "position": "MC",
-                        //     "location": "上海",
-                        //     "date": "2019-9-16",
-                        //     "description": "深耕500强车企商务和研发高端职位擅长精准定位职位需求并实现快速交付，择仕中国最快速达成百万顾问称号顾问之一",
-                        //     "experience1": "工作经验5年",
-                        //     "experience2": "4年高端猎头搜寻经验",
-                        //     "experience3": "",
-                        //     "field1": "车企商务",
-                        //     "field2": "高端研发",
-                        //     "field3": "",
-                        //     "keyword1": "百万顾问",
-                        //     "keyword2": "500强车企商务",
-                        //     "keyword3": "",
-                        //     "keyword4": "",
-                        //     "education1": "同济大学翻译硕士",
-                        //     "education2": "",
-                        //     "status": "有效",
-                        //     "id": 2,
-                        //     "imgUrl": require('../../assets/images/avatars/Crystal.jpg')
-                        // },
-                        // {
-                        //     "name": "Milla Sui",
-                        //     "name_en": "Milla Sui",
-                        //     "email": "",
-                        //     "position": "MC",
-                        //     "location": "上海",
-                        //     "date": "2019-9-16",
-                        //     "description": "知名上市公司5年高端人才搜寻经验,擅长制造业，汽车行业，消费品等领域人才搜寻多次荣获择仕中国Top Leader及百万顾问称号",
-                        //     "experience1": "10年工作经验",
-                        //     "experience2": "知名上市公司及5年高端人才搜寻经验",
-                        //     "experience3": "",
-                        //     "field1": "制造业",
-                        //     "field2": "汽车行业",
-                        //     "field3": "消费品",
-                        //     "keyword1": "百万顾问",
-                        //     "keyword2": "Top Leader",
-                        //     "keyword3": "",
-                        //     "keyword4": "",
-                        //     "education1": "",
-                        //     "education2": "",
-                        //     "status": "有效",
-                        //     "id": 3,
-                        //     "imgUrl": require('../../assets/images/avatars/Milla.jpg')
-                        // },
-                        // {
-                        //     "name": "Dora Lu",
-                        //     "name_en": "Dora Lu",
-                        //     "email": "",
-                        //     "position": "HRBPM",
-                        //     "location": "上海",
-                        //     "date": "2019-9-16",
-                        //     "description": "知名上市公司5年高端人才搜寻经验,擅长制造业，汽车行业，消费品等领域人才搜寻多次荣获择仕中国Top Leader及百万顾问称号",
-                        //     "experience1": "10年猎头行业从业经验",
-                        //     "experience2": "五年顾问及Team Leader经验",
-                        //     "experience3": "",
-                        //     "field1": "5年猎头公司内部招聘负责人经验",
-                        //     "field2": "",
-                        //     "field3": "",
-                        //     "keyword1": "资深顾问",
-                        //     "keyword2": "团队领导",
-                        //     "keyword3": "",
-                        //     "keyword4": "",
-                        //     "education1": "",
-                        //     "education2": "",
-                        //     "status": "有效",
-                        //     "id": 4,
-                        //     "imgUrl": require('../../assets/images/avatars/Dora.jpg')
-                        // }
+                        }
                     ]
     
                 }
             },
             methods: {
-                ...mapActions(["fetchConsultants"]),
+                // ...mapActions(["fetchConsultants"]),
                 openItem(item) {
                     this.consultant = Object.assign({}, item)
                     this.dialog = true
                 },
             },
             computed: {
-                ...mapGetters(["allConsultants"])
+                // ...mapGetters(["allConsultants"])
             },
             created() {
-                this.fetchConsultants()
+                // this.fetchConsultants()
     
             }
         }

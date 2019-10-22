@@ -53,7 +53,7 @@
                                                     </template>
                                                 </v-timeline-item>
                                                 <v-timeline-item class="mb-4" color="grey" icon-color="grey lighten-2"
-                                                    small right v-for="(item,index) in history">
+                                                    small right v-for="(item,index) in history" :key="index">
                                                     <v-card class="elevation-2 " color="transparent" max-width="300">
                                                         <v-card-title class="headline">{{item.year}}</v-card-title>
                                                         <v-card-text>
@@ -73,22 +73,22 @@
                                             <v-row justify="center" align="center">
                                                 <v-col cols="12" md="6">
                                                     <v-card class="" height="469" width="469" elevation="20">
-                                                        <img src="../../assets/images/about/CEO.jpg" alt=""
-                                                            width="100%">
+                                                        <img src="../../assets/images/about/CEO.jpg" alt="" width="100%">
                                                     </v-card>
                                                 </v-col>
                                                 <v-col cols="12" md="6">
-                                                    <v-card class="pa-10" max-width="469" flat elevation="20">
+                                                    <v-card class="pa-10" max-width="469" min-height="469" flat
+                                                        elevation="20">
 
                                                         <v-card-text>
                                                             <h1 class="disp"><span class="primary--text">CEO</span>
                                                                 <span class="black--text">夏乾衡</span></h1>
-                                                            <div class="caption pt-5">择仕中国创始人兼首席执行官</div>
-                                                            <div class="caption pb-5">中国人才交流市场化首批从业者</div>
+                                                            <div class="caption pt-5">择仕中国创始人</div>
+                                                            <div class="caption pb-5">中国人才市场化首批从业者</div>
 
                                                             <p>夏乾衡先生带领择仕中国经12年发展共为500余家中外知名公司提供了上千名高端管理和专业人才，在人力资源服务领域获得了极好的市场商誉和客户口碑
                                                             </p>
-                                                            <p>如今，中国许多创新企业所面临的人才挑战。也需要更专业的人才服务，十二年行业沉淀，夏乾衡先生将带领择仕中国将秉承着“让企业和个人未来增值”这一使命。以高效、专业、创新的服务能力将为中国人才服务市场注入最重要的一股力量
+                                                            <p>如今，中国许多创新企业所面临的人才挑战,也需要更专业的人才服务，十二年行业沉淀，夏乾衡先生将带领择仕中国将秉承着“让企业和个人未来增值”这一使命,以高效、专业、创新的服务能力将为中国人才服务市场注入最重要的一股力量
                                                             </p>
                                                         </v-card-text>
 

@@ -41,7 +41,7 @@
                                                 <v-list-item-title>
                                                     <p>
                                                         <span>{{item.title}}</span>
-                                                        <span class="float-right">{{item.date}}</span>
+                                                        <!-- <span class="float-right">{{item.date}}</span> -->
                                                     </p>
                                                 </v-list-item-title>
                                                 <v-list-item-subtitle>
@@ -63,7 +63,7 @@
 
                                             </v-list-item-action>
                                         </v-list-item>
-                                        <v-divider></v-divider>
+                                        <v-divider :key="item.id"></v-divider>
                                     </template>
                                 </v-list-item-group>
                             </v-list>
@@ -234,10 +234,10 @@
 
 
 <script>
-    import {
-        mapGetters,
-        mapActions
-    } from 'vuex'
+    // import {
+    //     mapGetters,
+    //     mapActions
+    // } from 'vuex'
 
     import jobs from './jobs.js'
     export default {
@@ -255,7 +255,7 @@
             // ...mapActions(["fetchJobs"]),
             openItem(item) {
                 this.job = Object.assign({}, item)
-                console.log(this.job);
+                // console.log(this.job);
 
                 this.dialog = true
             },
@@ -266,7 +266,7 @@
         created() {
             // this.fetchJobs()
             this.jobList = Object.assign({}, jobs.jobs)
-            console.log(jobList);
+            // console.log(jobList);
 
         }
 

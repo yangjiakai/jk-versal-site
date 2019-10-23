@@ -87,7 +87,7 @@
                                                         <v-card-title class="fill-height white--text" align-end
                                                             v-if="hover" style="background-color:rgba(0, 0, 0, .5)">
                                                             <p class="caption">
-                                                                拥有十余年德资企业管理经验，交通大学工商管理学硕士，具有五维教练领导力认证。进入猎头行业四年，率领大制造行业团队连续三年年业绩增长50%，善于培养百万顾问，其中四个顾问都成为公司中、高层管理人员
+                                                                拥有十余年德资企业管理经验，交通大学工商管理学硕士，具有五维教练领导力认证。进入猎头行业带团队四年，率领大制造行业团队连续三年年业绩增长50%，善于培养百万顾问，其中四个顾问都成为公司中、高层管理人员
                                                             </p>
                                                         </v-card-title>
                                                     </v-expand-transition>

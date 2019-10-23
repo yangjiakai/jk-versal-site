@@ -36,7 +36,7 @@
                                         <v-col cols="12" md="6">
                                             <v-card class="pa-10" width="700" flat>
                                                 <v-card-text>
-                                                    <h1><span class="primary--text">大制造招聘</span>
+                                                    <h1><span class="primary--text">大制造猎头</span>
                                                         <span class="black--text">业务</span></h1>
                                                     <div class="caption py-5 font-weight-bold">十二年磨砺，领跑行业</div>
 

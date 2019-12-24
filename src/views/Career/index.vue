@@ -77,12 +77,12 @@
                                     <h1 class="pa-3">{{job.title}}<span class="pl-3 title">{{job.salary}}</span>
                                     </h1>
                                     <p>
-                                        <i class="fas fa-project-diagram mx-3"></i>
+                                        <i class="fas fa-project-diagram mx-3" v-if="job.category"></i>
                                         <span class="grey--text">{{job.category}}</span>
                                         <i class="fas fa-map-marker-alt mx-3"></i>
                                         <span class="grey--text">{{job.location}}</span>
-                                        <i class="fas fa-clock mx-3"></i>
-                                        <span class="grey--text">{{job.date}} </span>
+                                        <!-- <i class="fas fa-clock mx-3"></i>
+                                        <span class="grey--text">{{job.date}} </span> -->
                                     </p>
                                 </v-card>
                             </v-col>

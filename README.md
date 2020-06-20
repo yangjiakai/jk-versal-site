@@ -1,4 +1,4 @@
-# zeshi3
+# zeshi3 version 1.0
 
 ## Project setup
 ```

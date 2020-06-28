@@ -11,25 +11,25 @@
                 <div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
                     <span class="pulse delay-05"></span>
                     <span class="pulse delay-04"></span></div>
-                <div class="show-regin"><span >青岛</span></div>
+                <div class="show-regin"><span>青岛</span></div>
             </div>
             <div class="region-list  active  postition-12 online-node">
                 <div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
                     <span class="pulse delay-05"></span>
                     <span class="pulse delay-04"></span></div>
-                <div class="show-regin"><span >西安</span></div>
+                <div class="show-regin"><span>西安</span></div>
             </div>
             <div class="region-list  active  postition-13 online-node">
                 <div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
                     <span class="pulse delay-05"></span>
                     <span class="pulse delay-04"></span></div>
-                <h1 class="show-regin font-weight-bold" ><span style="font-size: 20px">上海</span></h1>
+                <h1 class="show-regin font-weight-bold"><span style="font-size: 20px">上海</span></h1>
             </div>
             <div class="region-list active postition-8 online-node">
                 <div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
                     <span class="pulse delay-05"></span>
                     <span class="pulse delay-04"></span></div>
-                <div class="show-regin"><span >北京</span></div>
+                <div class="show-regin"><span>北京</span></div>
             </div>
             <div class="region-list active postition-10 online-node">
                 <div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
@@ -37,6 +37,27 @@
                     <span class="pulse delay-04"></span></div>
                 <div class="show-regin"><span>深圳</span></div>
             </div>
+            <div class="region-list active postition-15 online-node">
+                <div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+                    <span class="pulse delay-05"></span>
+                    <span class="pulse delay-04"></span></div>
+                <div class="show-regin"><span>大连</span></div>
+            </div>
+            <div class="region-list active postition-16 online-node">
+                <div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+                    <span class="pulse delay-05"></span>
+                    <span class="pulse delay-04"></span></div>
+                <div class="show-regin"><span>贵州</span></div>
+            </div>
+            <div class="region-list active postition-17 online-node">
+            
+                <div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+                    <span class="pulse delay-05"></span>
+                    <span class="pulse delay-04"></span></div>
+                <div class="show-regin" style="margin-top:-20px;"><span>苏州</span></div>
+       
+            </div>
+
         </div>
     </div>
 </template>
@@ -49,9 +70,9 @@
 
 <style lang="css">
     @media (max-width:760px) {
-    .china-map {
-        left:-340px
-    }
+        .china-map {
+            left: -340px
+        }
     }
 
     .china-map {
@@ -301,6 +322,26 @@
         left: 654px;
         top: 400px
     }
+
+    .postition-15 {
+        left: 635px;
+        top: 225px
+    }
+
+    .postition-16 {
+        left: 425px;
+        top: 485px
+    }
+
+    .postition-17 {
+        left: 630px;
+        top: 400px
+    }
+
+
+
+
+
 
     .douhao {
         width: 0

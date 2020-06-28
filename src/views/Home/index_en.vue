@@ -6,7 +6,8 @@
                     <v-row class="fill-height mask flex-column" align="center" justify="center">
                         <img src="@/assets/images/logo.png" alt="" style="width: 200px">
                         <div class="top-decoration"></div>
-                        <div class=" my-5 font-weight-black"><span class="main-title" style="font-size:5em">VERSAL</span></div>
+                        <div class=" my-5 font-weight-black"><span class="main-title"
+                                style="font-size:5em">VERSAL</span></div>
                         <div class="display-1 mb-5">择仕中国</div>
                         <div class="bottom-decoration"></div>
                         <vue-typed-js :strings="[slide]">
@@ -25,10 +26,10 @@
                                 <v-row>
                                     <v-col>
                                         <v-card class="text-center" flat color="rgba(0,0,0,.3)">
-                                            <h1 class="my-5"><span
-                                                    class="red--text font-weight-black mx-2 ">12年</span>高速稳定发展</h1>
+                                            <h1 class="my-5">择仕中国创立于2007年，十余年磨砺，领跑行业</h1>
                                             <p class="grey--text mb-8">
-                                                择仕中国12余年来稳健、快速发展，拥有丰富的人力资源行业经验及客户资源，立志成为中国市最具客户价值人力资源公司</p>
+                                                创立以来一直致力于中高端人才寻访、招聘流程外包、灵活用工等业务；我们始终相信每位客户值得拥有更好的服务，每位候选人值得拥有更好的职业生涯，每位服务顾问值得拥有更好的自我价值实现。
+                                            </p>
                                         </v-card>
                                     </v-col>
                                 </v-row>
@@ -45,12 +46,12 @@
                                             <p>我们的团队均来自跨国公司相关行业的高级管理人员和技术专业人才, 拥有丰富的行业背景和技术专长</p>
                                             <p> 同时，我们也因为组织的高速发展而不断吸引行业里优质的人才，并不断地培养和发展精英队伍。</p>
                                             <p>
-                                                总部位于<span class="font-weight-bold">上海</span>,于北京、西安、青岛已建立分公司，
-                                                未来将在重庆、杭州、长沙、南昌等众多省市建立分支机构；
-                                                为更多的地区和市场提供多元化的专业人力资源服务。
+                                                总部位于<span class="font-weight-bold">上海</span>,于北京、西安、青岛、大连、贵阳、苏州已建立分公司，
+                                                未来将在众多省市建立分支机构; 为更多的地区和市场提供多元化的专业人力资源服务。
                                             </p>
                                             <div>
-                                                <v-btn class="float-right" color="rgba(35,35,50.8)" to="/about_en">了解更多</v-btn>
+                                                <v-btn class="float-right" color="rgba(35,35,50.8)" to="/about_en">了解更多
+                                                </v-btn>
                                             </div>
                                         </v-card>
                                     </v-col>
@@ -73,137 +74,14 @@
                             </v-card>
                         </v-col>
                     </v-row>
-                    <v-item-group>
+                    <!-- <v-item-group>
                         <v-container>
-                            <v-row justify="center">
-                                <v-col cols="12" md="4" xl="2">
-                                    <v-item v-slot:default="{ active, toggle }">
-                                        <v-hover v-slot:default="{ hover }">
-                                            <v-card @click="toggle" :elevation="hover?10:2" class="text-center mx-auto"
-                                                max-width="250">
-                                                <!-- <v-img class="mx-auto" height="210" position="top center" > -->
-                                                    <v-img src="../../assets/images/avatars/樊申哲.jpg" class="mx-auto" height="210" position="top center">
-                                                    <v-expand-transition>
-                                                        <v-card-title class="fill-height white--text" align-end
-                                                            v-if="hover" style="background-color:rgba(0, 0, 0, .5)">
-                                                            <p class="caption">
-                                                                拥有十余年德资企业管理经验，交通大学工商管理学硕士，具有五维教练领导力认证。进入猎头行业带团队四年，率领大制造行业团队连续三年年业绩增长50%，善于培养百万顾问，其中四个顾问都成为公司中、高层管理人员
-                                                            </p>
-                                                        </v-card-title>
-                                                    </v-expand-transition>
-                                                </v-img>
-                                                <v-card-text>
-                                                    <h3 class="my-5">猎头业务合伙人/<span class="blue--text">大制造行业</span></h3>
-                                                    <h2 class="my-5">LESLIE FAN 樊申哲</h2>
-                                                </v-card-text>
-                                            </v-card>
-                                        </v-hover>
-                                    </v-item>
-
-                                </v-col>
-                                <v-col cols="12" md="4" xl="2">
-                                    <v-item v-slot:default="{ active, toggle }">
-                                        <v-hover v-slot:default="{ hover }">
-                                            <v-card @click="toggle" :elevation="hover?10:2" class="text-center mx-auto"
-                                                max-width="250">
-                                                <v-img src="../../assets/images/avatars/汤晓烨.jpg" class="mx-auto" height="210" position="top center">
-                                                    <v-expand-transition>
-                                                        <v-card-title class="fill-height white--text" align-end
-                                                            v-if="hover" style="background-color:rgba(0, 0, 0, .5)">
-                                                            <p class="caption">于14年以管培生身份加入择仕，连续3年百万顾问及公司TOP 1
-                                                                ，4年连续晋升。南开大学应用心理学硕士。连续多次季度最佳业绩。斩获公司十多项嘉奖。带领团队成员单产年均75万
-                                                            </p>
-                                                        </v-card-title>
-                                                    </v-expand-transition>
-                                                </v-img>
-                                                <v-card-text>
-                                                    <h3 class="my-5">猎头业务合伙人/<span class="blue--text">互联网行业</span></h3>
-                                                    <h2 class="my-5">VERA TANG 汤晓烨</h2>
-
-                                                </v-card-text>
-                                            </v-card>
-                                        </v-hover>
-                                    </v-item>
-                                </v-col>
-                                <v-col cols="12" md="4" xl="2">
-                                    <v-item v-slot:default="{ active, toggle }">
-                                        <v-hover v-slot:default="{ hover }">
-                                            <v-card @click="toggle" :elevation="hover?10:2" class="text-center mx-auto"
-                                                max-width="250">
-                                                <v-img src="../../assets/images/avatars/孙磊.jpg" class="mx-auto" height="210" position="top center">
-                                                    <v-expand-transition>
-                                                        <v-card-title class="fill-height white--text" align-end
-                                                            v-if="hover" style="background-color:rgba(0, 0, 0, .5)">
-                                                            <p class="caption">
-                                                                曾就职于中软，东南融通，文思海辉，佰钧成等国内一流IT外包公司，并担任重要管理职位。同时，在Microsoft，Criteo等国际知名IT企业任职过。拥有丰富的IT，外包全行业的经验。
-                                                            </p>
-                                                        </v-card-title>
-                                                    </v-expand-transition>
-                                                </v-img>
-                                                <v-card-text>
-                                                    <h3 class="my-5">外包业务合伙人</h3>
-                                                    <h2 class="my-5">TOM SUN 孙磊</h2>
-
-                                                </v-card-text>
-                                            </v-card>
-                                        </v-hover>
-                                    </v-item>
-                                </v-col>
-                                <v-col cols="12" md="4" xl="2">
-                                    <v-item v-slot:default="{ active, toggle }">
-                                        <v-hover v-slot:default="{ hover }">
-                                            <v-card @click="toggle" :elevation="hover?10:2" class="text-center mx-auto"
-                                                max-width="250">
-                                                <v-img src="../../assets/images/avatars/火颖杰.jpg" class="mx-auto" height="210" position="top center">
-                                                    <v-expand-transition>
-                                                        <v-card-title class="fill-height white--text" align-end
-                                                            v-if="hover" style="background-color:rgba(0, 0, 0, .5)">
-                                                            <p class="caption">曾就职于瀚德、Michael
-                                                                page等大型外资猎头公司，同济大学本科，在瀚德就职期间年最高单产230万，2018年获择仕最高单笔业绩个人佣金60万。团队业绩五百万Team
-                                                                Leader</p>
-                                                        </v-card-title>
-                                                    </v-expand-transition>
-                                                </v-img>
-                                                <v-card-text>
-                                                    <h3 class="my-5">猎头业务合伙人/<span class="blue--text">消费品行业</span></h3>
-                                                    <h2 class="my-5">JASON HUO火颖杰</h2>
-
-                                                </v-card-text>
-                                            </v-card>
-                                        </v-hover>
-                                    </v-item>
-                                </v-col>
-                                <v-col cols="12" md="4" xl="2">
-                                    <v-item v-slot:default="{ active, toggle }">
-                                        <v-hover v-slot:default="{ hover }">
-                                            <v-card @click="toggle" :elevation="hover?10:2" class="text-center mx-auto"
-                                                max-width="250">
-                                                <v-img src="../../assets/images/avatars/张楠.jpg" class="mx-auto" height="210" position="top center">
-                                                    <v-expand-transition>
-                                                        <v-card-title class="fill-height white--text" align-end
-                                                            v-if="hover" style="background-color:rgba(0, 0, 0, .5)">
-                                                            <p class="caption">
-                                                                拥有十年人力资源行业从业经验，曾任西北地区独角兽Yeahmobi集团核心高管带领择仕中国西安团队拿下多家北京、西北地区互联网头部客户，巩固择仕中国位于西北板块业务发展。
-                                                            </p>
-                                                        </v-card-title>
-                                                    </v-expand-transition>
-                                                </v-img>
-                                                <v-card-text>
-                                                    <h3 class="my-5">区域合伙人</h3>
-                                                    <h2 class="my-5">ELLA ZHANG 张楠</h2>
-
-                                                </v-card-text>
-                                            </v-card>
-                                        </v-hover>
-                                    </v-item>
-                                </v-col>
-                            </v-row>
                             <v-row>
                                 <v-spacer></v-spacer>
-                                <v-btn class="mr-5 mt-5" dark  color="#232332" to="/consultant">寻找顾问</v-btn>
+                                <v-btn class="mr-5 mt-5" dark color="#232332" to="/consultant">寻找顾问</v-btn>
                             </v-row>
                         </v-container>
-                    </v-item-group>
+                    </v-item-group> -->
 
                     <v-row justify="center">
                     </v-row>
@@ -220,16 +98,44 @@
                                 <v-row>
                                     <v-col>
                                         <v-card class="text-center" flat color="rgba(0,0,0,.3)">
-                                            <h1 class="my-5"><span
-                                                    class="red--text font-weight-black mx-2 ">400000+</span>高端行业人才</h1>
+                                            <h1 class="my-5">高端行业人才储备</h1>
                                             <p class="grey--text mb-8">
-                                                因为信任， 超过400000名高端行业人才与我们保持长期的联系，致力于培养高品质猎头，为企业提供高端人才招聘服务</p>
+                                                因为信任， 丰富的高端行业人才与我们保持长期的联系，致力于培养高品质猎头，为企业提供高端人才招聘服务。</p>
                                             <div>
-                                                <v-btn class="float-right" color="rgba(35,35,50.8) " to="/career_en">寻找职位</v-btn>
+                                                <v-btn class="float-right" color="rgba(35,35,50.8)"
+                                                    @click="jump(careerlink)">寻找职位</v-btn>
                                             </div>
                                         </v-card>
                                     </v-col>
                                 </v-row>
+                                
+                            </v-card>
+                        </v-col>
+                    </v-row>
+                    <v-row>
+                        <v-col>
+                            <v-card max-width="1200" class="pa-5 mx-auto" flat dark color="rgba(0,0,0,.3)">
+                                <v-row>
+                                    <v-col>
+                                        <v-card class="text-center" flat color="rgba(0,0,0,.3)">
+                                            <h1 class="my-5">荣誉证书</h1>
+                                            <v-row justify="center" align="center">
+                                                <v-col cols="12" sm="4">
+                                                    <v-img src="../../assets/images/home/荣誉证书.png" class="mx-auto" width="90%"></v-img>
+                                                </v-col>
+
+                                                <v-col cols="12" sm="4">
+                                                    <v-img src="../../assets/images/home/质量.jpg" class="mx-auto" width="90%"></v-img>
+                                                </v-col>
+
+                                                <v-col cols="12" sm="4">
+                                                    <v-img src="../../assets/images/home/会员证书.png" class="mx-auto" width="90%"></v-img>
+                                                </v-col>
+                                            </v-row>
+                                        </v-card>
+                                    </v-col>
+                                </v-row>
+                                
                             </v-card>
                         </v-col>
                     </v-row>
@@ -237,127 +143,6 @@
             </div>
         </div>
 
-
-        <div class="white">
-                <v-container>
-                    <v-row>
-                        <v-col>
-                            <v-card max-width="1200" class="pa-5 mx-auto" flat>
-                                <v-row>
-                                    <v-col>
-                                        <v-card class="text-center" flat>
-                                            <h1 class="my-5"><span
-                                                    class="red--text font-weight-black mx-2 ">500+</span>优质合作客户</h1>
-                                            <p class="grey--text mb-8">
-                                                我们拥有优质的全人力资源领域客户</p>
-                                        </v-card>
-                                    </v-col>
-                                </v-row>
-                                <v-row align="center" justify="center">
-                                    <v-col cols="6" md="2">
-                                        <v-img src="../../assets/images/home/bilibili.png" alt="" max-width="120"
-                                            class="mx-auto"></v-img>
-                                    </v-col>
-                                    <v-col cols="6" md="2">
-                                        <v-img src="../../assets/images/home/阿里巴巴.png" alt="" max-width="120"
-                                            class="mx-auto">
-                                        </v-img>
-                                    </v-col>
-                                    <v-col cols="6" md="2">
-                                        <v-img src="../../assets/images/home/网易.png" alt="" max-width="120" class="mx-auto">
-                                        </v-img>
-                                    </v-col>
-                                    <v-col cols="6" md="2">
-                                        <v-img src="../../assets/images/home/携程.png" alt="" max-width="120" class="mx-auto">
-                                        </v-img>
-                                    </v-col>
-                                </v-row>
-                                <v-row align="center">
-                                    <v-col cols="6" md="2">
-                                        <v-img src="../../assets/images/home/wanke.png" alt="" max-width="120" class="mx-auto">
-                                        </v-img>
-                                    </v-col>
-                                    <v-col cols="6" md="2">
-                                        <v-img src="../../assets/images/home/大搜车.png" alt="" max-width="120"
-                                            class="mx-auto">
-                                        </v-img>
-                                    </v-col>
-                                    <v-col cols="6" md="2">
-                                        <v-img src="../../assets/images/home/云鹊医.png" alt="" max-width="120"
-                                            class="mx-auto">
-                                        </v-img>
-                                    </v-col>
-                                    <v-col cols="6" md="2">
-                                        <v-img src="../../assets/images/home/喜马拉雅.png" alt="" max-width="120"
-                                            class="mx-auto">
-                                        </v-img>
-                                    </v-col>
-                                    <v-col cols="6" md="2">
-                                        <v-img src="../../assets/images/home/海南航空.png" alt="" max-width="120"
-                                            class="mx-auto">
-                                        </v-img>
-                                    </v-col>
-                                    <v-col cols="6" md="2">
-                                        <v-img src="../../assets/images/home/光明集团.png" alt="" max-width="120"
-                                            class="mx-auto">
-                                        </v-img>
-                                    </v-col>
-                                </v-row>
-                                <v-row align="center">
-                                    <v-col cols="6" md="2">
-                                        <v-img src="../../assets/images/home/摩根士丹利.png" alt="" max-width="120"
-                                            class="mx-auto">
-                                        </v-img>
-                                    </v-col>
-                                    <v-col cols="6" md="2">
-                                        <v-img src="../../assets/images/home/链家.png" alt="" max-width="120" class="mx-auto">
-                                        </v-img>
-                                    </v-col>
-                                    <v-col cols="6" md="2">
-                                        <v-img src="../../assets/images/home/中国农业银行.png" alt="" max-width="120" class="mx-auto">
-                                        </v-img>
-                                    </v-col>
-                                    <v-col cols="6" md="2">
-                                        <v-img src="../../assets/images/home/易果生鲜.png" alt="" max-width="120"
-                                            class="mx-auto">
-                                        </v-img>
-                                    </v-col>
-                                    <v-col cols="6" md="2">
-                                        <v-img src="../../assets/images/home/eaton.png" alt="" max-width="120"
-                                            class="mx-auto">
-                                        </v-img>
-                                    </v-col>
-                                    <v-col cols="6" md="2">
-                                        <v-img src="../../assets/images/home/上汽集团.png" alt="" max-width="120"
-                                            class="mx-auto">
-                                        </v-img>
-                                    </v-col>
-                                </v-row>
-                                <v-row justify="center" align="center">
-                                    <v-col cols="6" md="2">
-                                        <v-img src="../../assets/images/home/优衣库.png" alt="" max-width="120"
-                                            class="mx-auto">
-                                        </v-img>
-                                    </v-col>
-                                    <v-col cols="6" md="2">
-                                        <v-img src="../../assets/images/home/微盟.png" alt="" max-width="120" class="mx-auto">
-                                        </v-img>
-                                    </v-col>
-                                    <v-col cols="6" md="2">
-                                        <v-img src="../../assets/images/home/快看.png" alt="" max-width="120" class="mx-auto">
-                                        </v-img>
-                                    </v-col>
-                                    <v-col cols="6" md="2">
-                                        <v-img src="../../assets/images/home/siemens.svg" alt="" max-width="120"
-                                            class="mx-auto">
-                                        </v-img>
-                                    </v-col>
-                                </v-row>
-                            </v-card>
-                        </v-col>
-                    </v-row>
-                </v-container>
-            </div>
         <div class="touch-warp">
             <div class="mask">
                 <v-container>
@@ -367,10 +152,13 @@
                                 <v-row class="fill-height mask flex-column pa-5" align="center" justify="center">
                                     <img src="@/assets/images/logo.png" alt="" style="width: 200px">
                                     <div class="top-decoration"></div>
-                                    <div class="display-3 my-5 font-weight-black"><span class="main-title">Get In Touch</span>
+                                    <div class="display-3 my-5 font-weight-black"><span class="main-title">Get In
+                                            Touch</span>
                                     </div>
                                     <div class="display-1 mb-5">联系我们</div>
-                                    <div class="mb-5">Address：Room2311, Guangqi Building, No 425, yishan Road,xuhui zone,shanghai china</div>
+                                    <div class="mb-5">Address：Room2311, Guangqi Building, No 425, yishan Road,xuhuizone,shanghai china</div>
+                                    <div class="mb-5">Tel：021-31351010</div>
+
                                     <img src="../../assets/images/home/weixin.png" alt="">
                                     <div class="bottom-decoration"></div>
                                 </v-row>
@@ -391,6 +179,7 @@
         data() {
             return {
                 showArrows: false,
+                careerlink: "http://versal.gllue.me/portal#socialposition/list?ordering=-publish_date",
                 colors: [
                     'indigo',
                     'warning',
@@ -406,7 +195,9 @@
             }
         },
         methods: {
-
+           jump(e) {
+                window.location.href = e
+            },
         },
         components: {
             Map
@@ -417,13 +208,13 @@
 
 
 <style lang="css" scoped>
-
     @media (max-width:960px) {
-        .typing{
-           font-size: 20px;
-           max-width: 280px;
+        .typing {
+            font-size: 20px;
+            max-width: 280px;
         }
     }
+
     .slide1 {
         background-image: url('../../assets/images/banner4.jpg');
         background-size: cover;

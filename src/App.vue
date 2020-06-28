@@ -7,10 +7,10 @@
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items v-if="language=='中文'" class="d-none d-md-flex">
-        <v-btn text v-for="(item,index) in navigator" :to="item.route" :key="index">{{item.name}}</v-btn>
+        <v-btn text v-for="(item,index) in navigator" :to="item.route"  @click="item.link?jump(item.link):''" :key="index">{{item.name}}</v-btn>
       </v-toolbar-items>
       <v-toolbar-items v-else-if="language=='english'" class="d-none d-md-flex">
-        <v-btn text v-for="(item,index) in navigator_en" :to="item.route" :key="index">{{item.name}}</v-btn>
+        <v-btn text v-for="(item,index) in navigator_en" :to="item.route" @click="item.link?jump(item.link):''" :key="index">{{item.name}}</v-btn>
       </v-toolbar-items>
       <v-btn-toggle v-model="language" mandatory light class="mx-3">
         <v-btn text value="中文" to="/" small>
@@ -29,7 +29,7 @@
         <v-subheader>导航</v-subheader>
         <v-list-item-group>
           <template v-for="(item,index) in navigator">
-            <v-list-item :to="item.route" :key="index">
+            <v-list-item :to="item.route" @click="item.link?jump(item.link):''" :key="index">
               <v-list-item-icon>
                 <v-icon>fab fa-ethereum</v-icon>
               </v-list-item-icon>
@@ -45,7 +45,7 @@
         <v-subheader>Navigator</v-subheader>
         <v-list-item-group>
           <template v-for="(item,index) in navigator_en">
-            <v-list-item :to="item.route" :key="index">
+            <v-list-item :to="item.route" @click="item.link?jump(item.link):''" :key="index">
               <v-list-item-icon>
                 <v-icon>fab fa-ethereum</v-icon>
               </v-list-item-icon>
@@ -86,7 +86,7 @@
               </li>
             </ul>
           </v-col>
-          <v-col cols="6" md="3">
+          <!-- <v-col cols="6" md="3">
             <ul class="mx-auto" style="width:150px" v-if="language=='中文'">
               <li>寻找顾问</li>
               <li v-for="(item,index) in footer_nav.col2" :key="index">
@@ -99,18 +99,18 @@
                 <router-link :to="item.route">{{item.name}}</router-link>
               </li>
             </ul>
-          </v-col>
+          </v-col> -->
           <v-col cols="6" md="3">
             <ul class="mx-auto" style="width:150px" v-if="language=='中文'">
               <li>工作机会</li>
-              <li v-for="(item,index) in footer_nav.col3" :key="index">
-                <router-link :to="item.route">{{item.name}}</router-link>
+              <li>
+                <a href="http://versal.gllue.me/portal#socialposition/list?ordering=-publish_date">工作机会</a>
               </li>
             </ul>
             <ul class="mx-auto" style="width:150px" v-else-if="language=='english'">
               <li>Career</li>
-              <li v-for="(item,index) in footer_nav_en.col3" :key="index">
-                <router-link :to="item.route">{{item.name}}</router-link>
+              <li>
+                <a href="http://versal.gllue.me/portal#socialposition/list?ordering=-publish_date">Career</a>
               </li>
             </ul>
           </v-col>
@@ -123,14 +123,14 @@
             </ul>
             <ul class="mx-auto" style="width:150px" v-else-if="language=='english'">
               <div>
-                  <li>Versal News</li>
-                  <li v-for="(item,index) in footer_nav_en.col4" :key="index">
-                    <router-link :to="item.route">{{item.name}}</router-link>
-                  </li>
-        
+                <li>Versal News</li>
+                <li v-for="(item,index) in footer_nav_en.col4" :key="index">
+                  <router-link :to="item.route">{{item.name}}</router-link>
+                </li>
+
               </div>
-             
-      
+
+
             </ul>
           </v-col>
 
@@ -150,21 +150,18 @@
     components: {
 
     },
-    methods:{
-      // check(){
-      //   if (this.username=='versal'&&this.password=='zeshi') {
-      //     this.enter='b' 
-      //     console.log(666);
-      //     console.log(this.enter); 
-      //   }
-      // }
+    methods: {
+      jump(e) {
+        window.location.href = e
+      },
     },
     data: () => ({
+      careerlink:"http://versal.gllue.me/portal#socialposition/list?ordering=-publish_date",
       drawer: false,
-      dialog:false,
-      enter:false,
-      username:'',
-      password:'',
+      dialog: false,
+      enter: false,
+      username: '',
+      password: '',
       language: "中文",
       navigator: [{
           name: '首页',
@@ -178,13 +175,14 @@
           name: '选择择仕',
           route: '/whyus'
         },
-        {
-          name: '寻找顾问',
-          route: '/consultant'
-        },
+        // {
+        //   name: '寻找顾问',
+        //   route: '/consultant'
+        // },
         {
           name: '工作机会',
-          route: '/career'
+          // route: '/career',
+          link: 'http://versal.gllue.me/portal#socialposition/list?ordering=-publish_date'
         },
         {
           name: '择仕新闻',
@@ -203,13 +201,14 @@
           name: 'Whyus',
           route: '/whyus_en'
         },
-        {
-          name: 'Consultant',
-          route: '/consultant_en'
-        },
+        // {
+        //   name: 'Consultant',
+        //   route: '/consultant_en'
+        // },
         {
           name: 'Career',
-          route: '/career_en'
+          // route: '/career_en'
+          link: 'http://versal.gllue.me/portal#socialposition/list?ordering=-publish_date'
         },
         {
           name: 'News',
@@ -226,10 +225,10 @@
             route: '/about'
           },
         ],
-        col2: [{
-          name: '顾问列表',
-          route: '/consultant'
-        }],
+        // col2: [{
+        //   name: '顾问列表',
+        //   route: '/consultant'
+        // }],
         col3: [{
           name: '工作机会',
           route: '/career'
@@ -240,8 +239,7 @@
         }],
       },
       footer_nav_en: {
-        col1: [
-          {
+        col1: [{
             name: 'HISTORY',
             route: '/about'
           },
@@ -251,10 +249,10 @@
           },
 
         ],
-        col2: [{
-          name: 'CONSULTANT',
-          route: '/consultant'
-        }],
+        // col2: [{
+        //   name: 'CONSULTANT',
+        //   route: '/consultant'
+        // }],
         col3: [{
           name: 'CAREER',
           route: '/career'

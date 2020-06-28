@@ -30,11 +30,9 @@
                             </v-toolbar>
                             <v-tabs :vertical="vertical" background-color="#232332">
                                 <v-tab class="tab1">
-                          
                                     历史沿革
                                 </v-tab>
                                 <v-tab>
-                         
                                     择仕创始人
                                 </v-tab>
                                 <v-tab-item>
@@ -157,6 +155,10 @@
                         year: '2019年',
                         event: '成立12周年,精耕人力资源解决方案',
                         detile: '多次获得客户给予的 Top vendor的称号'
+                    }, {
+                        year: '2020年',
+                        event: 'VERSAL成立大连，贵阳分公司',
+                        detile: '联合建立青岛西海岸新区国际人才交付中心'
                     }
 
                 ]

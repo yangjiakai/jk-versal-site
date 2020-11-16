@@ -37,7 +37,7 @@
                 <v-list-item-subtitle v-text="item.name"></v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
-            <v-divider :key="index"></v-divider>
+            <v-divider :key="index + 'divider1'"></v-divider>
           </template>
         </v-list-item-group>
       </v-list>
@@ -53,7 +53,7 @@
                 <v-list-item-subtitle v-text="item.name"></v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
-            <v-divider :key="index"></v-divider>
+            <v-divider :key="index + 'divider2'"></v-divider>
           </template>
         </v-list-item-group>
       </v-list>

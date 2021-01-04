@@ -24,17 +24,22 @@
             <v-container fluid>
                 <v-row>
                     <v-col>
-                        <v-card class="mx-auto my-n12   history-warp" elevation="10" dark >
+                        <v-card class="mx-auto my-n12   history-warp" elevation="10" dark>
                             <v-toolbar flat color="#232332" dark>
                                 <v-toolbar-title>About Versal</v-toolbar-title>
                             </v-toolbar>
                             <v-tabs :vertical="vertical" background-color="#232332">
+
                                 <v-tab class="tab1">
                                     历史沿革
                                 </v-tab>
                                 <v-tab>
                                     择仕创始人
                                 </v-tab>
+                                <v-tab>
+                                    专注领域
+                                </v-tab>
+
                                 <v-tab-item>
                                     <v-card flat color="transparent" class="history-warp" dark>
                                         <div class="mask">
@@ -68,7 +73,8 @@
                                             <v-row justify="center" align="center">
                                                 <v-col cols="12" md="6">
                                                     <v-card class="" height="469" width="469" elevation="20">
-                                                        <img src="../../assets/images/about/CEO.jpg" alt="" width="100%">
+                                                        <img src="../../assets/images/about/CEO.jpg" alt=""
+                                                            width="100%">
                                                     </v-card>
                                                 </v-col>
                                                 <v-col cols="12" md="6">
@@ -98,7 +104,81 @@
                                         </v-card-text>
                                     </v-card>
                                 </v-tab-item>
-
+                                <v-tab-item>
+                                    <h1 class="py-10 text-center main-text-color">全力赋能五大升级领域</h1>
+                                    <v-item-group class="pb-5">
+                                        <v-container>
+                                            <v-row>
+                                                <v-col cols="12" md="2" offset-md="1">
+                                                    <v-item>
+                                                        <v-card class="text-center" height="300" elevation="6">
+                                                            <h2 class="pt-8 py-4">智慧出行</h2>
+                                                            <v-icon class="fas fa-car" style="font-size:50px"
+                                                                color="#232332"></v-icon>
+                                                            <h4 class="pt-4">新能源汽车</h4>
+                                                            <h4>无人驾驶</h4>
+                                                            <h4>车联网</h4>
+                                                            <h4>汽车后市场</h4>
+                                                        </v-card>
+                                                    </v-item>
+                                                </v-col>
+                                                <v-col cols="12" md="2">
+                                                    <v-item>
+                                                        <v-card class="text-center" height="300" elevation="6">
+                                                            <h2 class="pt-8 py-4">互联网高科技</h2>
+                                                            <v-icon class="fas fa-wifi" style="font-size:50px"
+                                                                color="#232332"></v-icon>
+                                                            <h4 class="pt-4">人工智能</h4>
+                                                            <h4>物流仓储</h4>
+                                                            <h4>新零售</h4>
+                                                            <h4>大数据科技</h4>
+                                                        </v-card>
+                                                    </v-item>
+                                                </v-col>
+                                                <v-col cols="12" md="2">
+                                                    <v-item>
+                                                        <v-card class="text-center" height="300" elevation="6">
+                                                            <h2 class="pt-8 py-4">智能创造</h2>
+                                                            <v-icon class="fab fa-android" style="font-size:50px"
+                                                                color="#232332"></v-icon>
+                                                            <h4 class="pt-4">云服务</h4>
+                                                            <h4>只能控制</h4>
+                                                            <h4>机器人</h4>
+                                                            <h4>工业互联网</h4>
+                                                        </v-card>
+                                                    </v-item>
+                                                </v-col>
+                                                <v-col cols="12" md="2">
+                                                    <v-item>
+                                                        <v-card class="text-center" height="300" elevation="6">
+                                                            <h2 class="pt-8 py-4">金融科技</h2>
+                                                            <v-icon class="fas  fa-hand-holding-usd"
+                                                                style="font-size:50px" color="#232332"></v-icon>
+                                                            <h4 class="pt-4">金融风控</h4>
+                                                            <h4>数据模型</h4>
+                                                            <h4>支付</h4>
+                                                            <h4>场景应用</h4>
+                                                        </v-card>
+                                                    </v-item>
+                                                </v-col>
+                                                <v-col cols="12" md="2">
+                                                    <v-item>
+                                                        <v-card class="text-center" height="300" elevation="6">
+                                                            <h2 class="pt-8 py-4">智慧健康</h2>
+                                                            <v-icon class="fas fa-hand-holding-medical"
+                                                                style="font-size:50px" color="#232332"></v-icon>
+                                                            <h4 class="pt-4">生物药品研发</h4>
+                                                            <h4>医疗器械研发</h4>
+                                                            <h4>创新药</h4>
+                                                            <h4>医药医疗分销</h4>
+                                                        </v-card>
+                                                    </v-item>
+                                                </v-col>
+                                            </v-row>
+                                        </v-container>
+                                    </v-item-group>
+                                    <v-divider class="my-5"></v-divider>
+                                </v-tab-item>
                             </v-tabs>
                         </v-card>
                     </v-col>
@@ -114,7 +194,7 @@
         data() {
             return {
                 dense: false,
-                vertical:true,
+                vertical: true,
                 history: [{
                         year: '2007年',
                         event: 'VERSAL成立于上海',
@@ -157,7 +237,7 @@
                         detile: '多次获得客户给予的 Top vendor的称号'
                     }, {
                         year: '2020年',
-                        event: 'VERSAL成立大连，贵阳分公司',
+                        event: 'VERSAL成立大连,苏州分公司',
                         detile: '联合建立青岛西海岸新区国际人才交付中心'
                     }
 
@@ -167,7 +247,7 @@
         mounted() {
             if (window.innerWidth < 1000) {
                 this.dense = true
-                this.vertical =false
+                this.vertical = false
             }
         },
     }
@@ -214,7 +294,7 @@
         height: 150px;
         border-radius: 75px;
         z-index: -1;
-        background-color: rgba(0, 112, 192, .9);
+        background-color: rgba(31, 35, 65, .9);
         box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
         transform: rotate(-3deg);
     }

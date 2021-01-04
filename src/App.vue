@@ -1,22 +1,25 @@
 <template>
   <v-app>
     <!-- App Bar -->
-    <v-app-bar dark app color="#232332">
+    <v-app-bar dark fixed color="rgba(0,0,0,.3)">
       <v-toolbar-title class="d-flex align-center">
-        <img src="@/assets/images/logo2.png" alt="" width="130px">
+        <img src="@/assets/images/logo_全染.png" alt="" width="130px">
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items v-if="language=='中文'" class="d-none d-md-flex">
-        <v-btn text v-for="(item,index) in navigator" :to="item.route"  @click="item.link?jump(item.link):''" :key="index">{{item.name}}</v-btn>
+        <v-btn text v-for="(item,index) in navigator" :to="item.route" @click="item.link?jump(item.link):''"
+          :key="index">{{item.name}}</v-btn>
       </v-toolbar-items>
       <v-toolbar-items v-else-if="language=='english'" class="d-none d-md-flex">
-        <v-btn text v-for="(item,index) in navigator_en" :to="item.route" @click="item.link?jump(item.link):''" :key="index">{{item.name}}</v-btn>
+        <v-btn text v-for="(item,index) in navigator_en" :to="item.route" @click="item.link?jump(item.link):''"
+          :key="index">{{item.name}}</v-btn>
       </v-toolbar-items>
-      <v-btn-toggle v-model="language" mandatory light class="mx-3">
-        <v-btn text value="中文" to="/" small>
+      <v-btn-toggle v-model="language" tile color="brown lighten-5" group mandatory class="ml-2">
+        <v-btn value="中文">
           简体中文
         </v-btn>
-        <v-btn text value="english" to="/home_en" small>
+
+        <v-btn value="english">
           English
         </v-btn>
       </v-btn-toggle>
@@ -72,7 +75,7 @@
 
         <v-row justify="center">
 
-          <v-col cols="6" md="3">
+          <v-col cols="4">
             <ul class="mx-auto" style="width:150px" v-if="language=='中文'">
               <li>企业情报</li>
               <li v-for="(item,index) in footer_nav.col1" :key="index">
@@ -100,21 +103,23 @@
               </li>
             </ul>
           </v-col> -->
-          <v-col cols="6" md="3">
+          <v-col cols="4">
             <ul class="mx-auto" style="width:150px" v-if="language=='中文'">
               <li>工作机会</li>
               <li>
-                <a href="http://versal.gllue.me/portal#socialposition/list?ordering=-publish_date">工作机会</a>
+                <a href="http://versal.gllue.me/portal#socialposition/list?ordering=-publish_date"
+                  target="_blank">工作机会</a>
               </li>
             </ul>
             <ul class="mx-auto" style="width:150px" v-else-if="language=='english'">
               <li>Career</li>
               <li>
-                <a href="http://versal.gllue.me/portal#socialposition/list?ordering=-publish_date">Career</a>
+                <a href="http://versal.gllue.me/portal#socialposition/list?ordering=-publish_date"
+                  target="_blank">Career</a>
               </li>
             </ul>
           </v-col>
-          <v-col cols="6" md="3">
+          <v-col cols="4">
             <ul class="mx-auto" style="width:150px" v-if="language=='中文'">
               <li>择仕新闻</li>
               <li v-for="(item,index) in footer_nav.col4" :key="index">
@@ -138,7 +143,7 @@
 
       </v-container>
       <v-card color="grey darken-4 " class="text-center white--text" width="100%">
-        Copyright&copy;2012 - 2019<strong>&nbsp;Shanghai Versal Consulting Co.Ltd&nbsp;</strong> All Rights Reserved
+        Copyright&copy;2012 - 2021<strong>&nbsp;Shanghai Versal Consulting Co.Ltd&nbsp;</strong> All Rights Reserved
       </v-card>
     </v-footer>
   </v-app>
@@ -152,11 +157,15 @@
     },
     methods: {
       jump(e) {
-        window.location.href = e
+        // 外链的跳转方式
+        // window.location.href = e
+
+        // 新窗口打开外链的方式
+        window.open(e, '_blank')
       },
     },
     data: () => ({
-      careerlink:"http://versal.gllue.me/portal#socialposition/list?ordering=-publish_date",
+      careerlink: "http://versal.gllue.me/portal#socialposition/list?ordering=-publish_date",
       drawer: false,
       dialog: false,
       enter: false,
@@ -217,14 +226,9 @@
       ],
       footer_nav: {
         col1: [{
-            name: '历史沿革',
-            route: '/about'
-          },
-          {
-            name: '创始人',
-            route: '/about'
-          },
-        ],
+          name: '历史沿革',
+          route: '/about'
+        }],
         // col2: [{
         //   name: '顾问列表',
         //   route: '/consultant'
@@ -241,10 +245,6 @@
       footer_nav_en: {
         col1: [{
             name: 'HISTORY',
-            route: '/about'
-          },
-          {
-            name: 'CEO',
             route: '/about'
           },
 
@@ -287,5 +287,29 @@
   .v-footer a {
     text-decoration: none;
     color: #767699 !important;
+  }
+
+  .main-title {
+    position: relative;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, .5);
+    z-index: 1;
+  }
+
+  .main-title::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -40px;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    z-index: -1;
+    background-image: linear-gradient(135deg, rgb(245, 210, 173, .7), rgb(186, 126, 90, .9));
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    transform: rotate(-3deg);
+  }
+
+  .main-text-color {
+    color: #C88E67;
   }
 </style>

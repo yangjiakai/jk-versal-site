@@ -62,7 +62,7 @@
                 </v-container>
             </div>
         </div>
-        <div class="partner-warp ">
+        <!-- <div class="partner-warp ">
             <div class="white">
                 <v-card class="white mx-auto pa-5" flat width="1600">
                     <v-row>
@@ -74,21 +74,21 @@
                             </v-card>
                         </v-col>
                     </v-row>
-                    <!-- <v-item-group>
+                    <v-item-group>
                         <v-container>
                             <v-row>
                                 <v-spacer></v-spacer>
                                 <v-btn class="mr-5 mt-5" dark color="#232332" to="/consultant">寻找顾问</v-btn>
                             </v-row>
                         </v-container>
-                    </v-item-group> -->
+                    </v-item-group>
 
                     <v-row justify="center">
                     </v-row>
 
                 </v-card>
             </div>
-        </div>
+        </div> -->
         <div class="talent-warp">
             <div class="mask">
                 <v-container>
@@ -108,7 +108,7 @@
                                         </v-card>
                                     </v-col>
                                 </v-row>
-                                
+
                             </v-card>
                         </v-col>
                     </v-row>
@@ -121,25 +121,108 @@
                                             <h1 class="my-5">荣誉证书</h1>
                                             <v-row justify="center" align="center">
                                                 <v-col cols="12" sm="4">
-                                                    <v-img src="../../assets/images/home/荣誉证书.png" class="mx-auto" width="90%"></v-img>
+                                                    <v-img src="../../assets/images/home/荣誉证书.png" class="mx-auto"
+                                                        width="90%"></v-img>
                                                 </v-col>
 
                                                 <v-col cols="12" sm="4">
-                                                    <v-img src="../../assets/images/home/质量.jpg" class="mx-auto" width="90%"></v-img>
+                                                    <v-img src="../../assets/images/home/质量.jpg" class="mx-auto"
+                                                        width="90%"></v-img>
                                                 </v-col>
 
                                                 <v-col cols="12" sm="4">
-                                                    <v-img src="../../assets/images/home/会员证书.png" class="mx-auto" width="90%"></v-img>
+                                                    <v-img src="../../assets/images/home/会员证书.png" class="mx-auto"
+                                                        width="90%"></v-img>
+                                                </v-col>
+                                            </v-row>
+                                            <v-row justify="center">
+                                                <v-col cols="12" sm="4">
+                                                    <v-img src="../../assets/images/home/人力资源.png" class="mx-auto"
+                                                        width="90%"></v-img>
                                                 </v-col>
                                             </v-row>
                                         </v-card>
                                     </v-col>
                                 </v-row>
-                                
+
                             </v-card>
                         </v-col>
                     </v-row>
                 </v-container>
+            </div>
+        </div>
+
+        <div class="talent-warp">
+            <div class="mask">
+                <h1 class="py-10 text-center white--text">全力赋能五大升级领域</h1>
+                <v-item-group class="pb-5">
+                    <v-container>
+                        <v-row>
+                            <v-col cols="12" md="2" offset-md="1">
+                                <v-item>
+                                    <v-card class="text-center" height="300" elevation="6">
+                                        <h2 class="pt-8 py-4">智慧出行</h2>
+                                        <v-icon class="fas fa-car" style="font-size:50px" color="#232332"></v-icon>
+                                        <h4 class="pt-4">新能源汽车</h4>
+                                        <h4>无人驾驶</h4>
+                                        <h4>车联网</h4>
+                                        <h4>汽车后市场</h4>
+                                    </v-card>
+                                </v-item>
+                            </v-col>
+                            <v-col cols="12" md="2">
+                                <v-item>
+                                    <v-card class="text-center" height="300" elevation="6">
+                                        <h2 class="pt-8 py-4">互联网高科技</h2>
+                                        <v-icon class="fas fa-wifi" style="font-size:50px" color="#232332"></v-icon>
+                                        <h4 class="pt-4">人工智能</h4>
+                                        <h4>物流仓储</h4>
+                                        <h4>新零售</h4>
+                                        <h4>大数据科技</h4>
+                                    </v-card>
+                                </v-item>
+                            </v-col>
+                            <v-col cols="12" md="2">
+                                <v-item>
+                                    <v-card class="text-center" height="300" elevation="6">
+                                        <h2 class="pt-8 py-4">智能创造</h2>
+                                        <v-icon class="fab fa-android" style="font-size:50px" color="#232332"></v-icon>
+                                        <h4 class="pt-4">云服务</h4>
+                                        <h4>只能控制</h4>
+                                        <h4>机器人</h4>
+                                        <h4>工业互联网</h4>
+                                    </v-card>
+                                </v-item>
+                            </v-col>
+                            <v-col cols="12" md="2">
+                                <v-item>
+                                    <v-card class="text-center" height="300" elevation="6">
+                                        <h2 class="pt-8 py-4">金融科技</h2>
+                                        <v-icon class="fas  fa-hand-holding-usd" style="font-size:50px" color="#232332">
+                                        </v-icon>
+                                        <h4 class="pt-4">金融风控</h4>
+                                        <h4>数据模型</h4>
+                                        <h4>支付</h4>
+                                        <h4>场景应用</h4>
+                                    </v-card>
+                                </v-item>
+                            </v-col>
+                            <v-col cols="12" md="2">
+                                <v-item>
+                                    <v-card class="text-center" height="300" elevation="6">
+                                        <h2 class="pt-8 py-4">智慧健康</h2>
+                                        <v-icon class="fas fa-hand-holding-medical" style="font-size:50px"
+                                            color="#232332"></v-icon>
+                                        <h4 class="pt-4">生物药品研发</h4>
+                                        <h4>医疗器械研发</h4>
+                                        <h4>创新药</h4>
+                                        <h4>医药医疗分销</h4>
+                                    </v-card>
+                                </v-item>
+                            </v-col>
+                        </v-row>
+                    </v-container>
+                </v-item-group>
             </div>
         </div>
 
@@ -156,7 +239,8 @@
                                             Touch</span>
                                     </div>
                                     <div class="display-1 mb-5">联系我们</div>
-                                    <div class="mb-5">Address：Room2311, Guangqi Building, No 425, yishan Road,xuhuizone,shanghai china</div>
+                                    <div class="mb-5">Address：Room2311, Guangqi Building, No 425, yishan
+                                        Road,xuhuizone,shanghai china</div>
                                     <div class="mb-5">Tel：021-31351010</div>
 
                                     <img src="../../assets/images/home/weixin.png" alt="">
@@ -195,7 +279,7 @@
             }
         },
         methods: {
-           jump(e) {
+            jump(e) {
                 window.location.href = e
             },
         },
@@ -236,26 +320,6 @@
         border-bottom: none;
         height: 5rem;
         width: 15rem;
-    }
-
-    .main-title {
-        position: relative;
-        text-shadow: 5px 5px 2px rgba(0, 0, 0, .5);
-        z-index: 1;
-    }
-
-    .main-title::before {
-        content: "";
-        position: absolute;
-        top: -50px;
-        left: -40px;
-        width: 150px;
-        height: 150px;
-        border-radius: 75px;
-        z-index: -1;
-        background-color: rgba(0, 112, 192, .9);
-        box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-        transform: rotate(-3deg);
     }
 
     .bottom-decoration {

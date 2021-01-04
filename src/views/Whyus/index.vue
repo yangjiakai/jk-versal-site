@@ -36,7 +36,7 @@
                                         <v-col cols="12" md="6">
                                             <v-card class="pa-10" width="700" flat>
                                                 <v-card-text>
-                                                    <h1 class="primary--text">中高端人才寻访</h1>
+                                                    <h1 class="main-text-color">中高端人才寻访</h1>
                                                     <div class="caption py-5 font-weight-bold">针对中高级管理、专业技术人才短缺，提供深入的行业及职能解决方案。</div>
 
                                                     <p class="black--text">择仕于2007年开始布局并深耕，是国内早期开展中高端人才访寻业务的机构之一。
@@ -59,7 +59,7 @@
                                         <v-col cols="12" md="6">
                                             <v-card class="pa-10" width="700" dark color="transparent" flat>
                                                 <v-card-text>
-                                                    <h1><span class="white--text">灵活用工</span>
+                                                    <h1><span class="white--text">灵活</span><span class="main-text-color">用工</span>
                                                        </h1>
                                                     <div class="caption py-5 font-weight-bold">灵活用工是择仕中国面向企业提供的人员外包解决方案，为企业提供从“起点”—“终点”的一站式专业服务</div>
 
@@ -90,7 +90,7 @@
                                         <v-col cols="12" md="6">
                                             <v-card class="pa-10"  width="700" flat>
                                                 <v-card-text>
-                                                    <h1 class="primary--text">招聘流程外包</h1>
+                                                    <h1 class="main-text-color">招聘流程外包</h1>
                                                     <div class="caption py-5 font-weight-bold">致力于成为外包行业内具有影响力的品牌</div>
 
                                                     <p class="black--text">雇主将全部或部分招聘需求、甄选工作委托给第三方的专业人力资源公司。专业人力资源公司利用自己在人才资源、评价工具和流程管理方面的优势来完成招聘工作的一种方式。可以提供雇主的整个招聘流程外包：包括流程优化、评估与再造、制定招聘及筛选策略、招聘决策、新员工入职直至员工保留等。</p>
@@ -111,7 +111,7 @@
                                         <v-col cols="12" md="6">
                                             <v-card class="pa-10" width="700" dark color="transparent" flat>
                                                 <v-card-text>
-                                                    <h1><span class="primary--text">其他</span>
+                                                    <h1><span class="main-text-color">其他</span>
                                                         <span class="white--text">业务</span></h1>
                                                     <div class="title py-5 font-weight-bold">培训业务</div>
                                                     <p>针对企业管理层、招聘团队、内部运营等方面技能，提供专业策略及技能系列培训、定制化内训、专业公开课、工作坊、沙龙、行业论坛等，全方位的帮助企业达成降本、提效、增利
@@ -166,26 +166,6 @@
         border-bottom: none;
         height: 5rem;
         width: 15rem;
-    }
-
-    .main-title {
-        position: relative;
-        text-shadow: 5px 5px 2px rgba(0, 0, 0, .5);
-        z-index: 1;
-    }
-
-    .main-title::before {
-        content: "";
-        position: absolute;
-        top: -50px;
-        left: -70px;
-        width: 150px;
-        height: 150px;
-        border-radius: 75px;
-        z-index: -1;
-        background-color: rgba(0, 112, 192, .9);
-        box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-        transform: rotate(-3deg);
     }
 
     .bottom-decoration {

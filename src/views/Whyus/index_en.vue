@@ -31,7 +31,7 @@
                                     <v-row justify="center" align="center">
                                         <v-col cols="12" md="6">
                                             <v-card  width="700" elevation="5">
-                                                <v-img src="../../assets/images/人才寻访.png" width="100%" ></v-img>
+                                                <v-img src="../../assets/images/中高端人材寻访.png" width="100%" ></v-img>
                                             </v-card>
                                         </v-col>
                                         <v-col cols="12" md="6">
@@ -53,6 +53,7 @@
                             </v-col>
                         </v-row>
 
+
                         <v-row style="background-image:linear-gradient(0deg,#141E30,#243B55)">
                             <v-col>
                                 <v-card width="1600" class="mx-auto py-12" color="transparent" flat>
@@ -60,18 +61,21 @@
                                         <v-col cols="12" md="6">
                                             <v-card class="pa-10" width="700" dark color="transparent" flat>
                                                 <v-card-text>
-                                                    <h1><span class="white--text">灵活</span><span class="main-text-color">用工</span>
-                                                       </h1>
-                                                    <div class="caption py-5 font-weight-bold">灵活用工是择仕中国面向企业提供的人员外包解决方案，为企业提供从“起点”—“终点”的一站式专业服务</div>
+                                                    <h1 class="py-5"><span class="white--text">人才岗位</span><span
+                                                            class="main-text-color">外包服务</span>
+                                                    </h1>
+                                                    <p>择仕人才岗位外包服务以<b>高效、灵活、省钱、专注</b>
+                                                        为主要优势，以解决企业用人需求与用工风险/用工成本之间的平衡为目标，主要满足企业的<b>阶段性、项目型、临时性</b>用人需求，解决<b>流动频繁、需求量大、人员管理</b>
+                                                        等实际用工问题，同时降低用工风险、降低用工成本的完整解决方案。
 
-                                                    <p>灵活用工以解决企业人员需求为目标，对客户提出的需求进行分析和评估，提供合适的的招聘渠道、人才搜寻与人才甄选等方案，精准瞄准目标人群，并协助客户进行简历筛选和初期面试，为客户定位关键候选人，以最快的速度解决相关人员需求。
                                                     </p>
+                                                    <p>核心员工超五年占比80% <br>外包员工主动离职率＜20%<br>突发紧急需求突击团队组建时间8个工作时<br>平均面试通过率67%<br>平均到岗率87%</p>
                                                 </v-card-text>
                                             </v-card>
                                         </v-col>
                                         <v-col cols="12" md="6">
                                             <v-card width="700" elevation="5">
-                                                <v-img src="../../assets/images/灵活运工.png" width="100%"></v-img>
+                                                <v-img src="../../assets/images/招聘优势.png" width="100%"></v-img>
                                             </v-card>
                                         </v-col>
 
@@ -89,13 +93,15 @@
                                             </v-card>
                                         </v-col>
                                         <v-col cols="12" md="6">
-                                            <v-card class="pa-10"  width="700" flat>
+                                            <v-card class="pa-10" width="700" flat>
                                                 <v-card-text>
                                                     <h1 class="main-text-color">招聘流程外包</h1>
                                                     <div class="caption py-5 font-weight-bold">致力于成为外包行业内具有影响力的品牌</div>
 
-                                                    <p class="black--text">雇主将全部或部分招聘需求、甄选工作委托给第三方的专业人力资源公司。专业人力资源公司利用自己在人才资源、评价工具和流程管理方面的优势来完成招聘工作的一种方式。可以提供雇主的整个招聘流程外包：包括流程优化、评估与再造、制定招聘及筛选策略、招聘决策、新员工入职直至员工保留等。</p>
-                                                  
+                                                    <p class="black--text">
+                                                        雇主将全部或部分招聘需求、甄选工作委托给第三方的专业人力资源公司。专业人力资源公司利用自己在人才资源、评价工具和流程管理方面的优势来完成招聘工作的一种方式。可以提供雇主的整个招聘流程外包：包括流程优化、评估与再造、制定招聘及筛选策略、招聘决策、新员工入职直至员工保留等。
+                                                    </p>
+
                                                 </v-card-text>
                                             </v-card>
                                         </v-col>

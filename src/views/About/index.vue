@@ -87,9 +87,9 @@
                                                             <div class="caption pt-5">择仕中国创始人</div>
                                                             <div class="caption pb-5">中国人才市场化首批从业者</div>
 
-                                                            <p>夏乾衡先生带领择仕中国经12年发展共为500余家中外知名公司提供了上千名高端管理和专业人才，在人力资源服务领域获得了极好的市场商誉和客户口碑
+                                                            <p>夏乾衡先生带领择仕中国经十余年发展共为500余家中外知名公司提供了上千名高端管理和专业人才，在人力资源服务领域获得了极好的市场商誉和客户口碑
                                                             </p>
-                                                            <p>如今，中国许多创新企业所面临的人才挑战,也需要更专业的人才服务，十二年行业沉淀，夏乾衡先生将带领择仕中国将秉承着“让企业和个人未来增值”这一使命,以高效、专业、创新的服务能力将为中国人才服务市场注入最重要的一股力量
+                                                            <p>如今，中国许多创新企业所面临的人才挑战,也需要更专业的人才服务，十余年行业沉淀，夏乾衡先生将带领择仕中国将秉承着“秉承着人才赋能产业升级这一使命”这一使命,以高效、专业、创新的服务能力将为中国人才服务市场注入最重要的一股力量
                                                             </p>
                                                         </v-card-text>
 
@@ -105,20 +105,20 @@
                                     </v-card>
                                 </v-tab-item>
                                 <v-tab-item>
-                                    <h1 class="py-10 text-center main-text-color">全力赋能五大升级领域</h1>
+                                    <h1 class="py-10 text-center main-text-color">赋能产业升级领域</h1>
                                     <v-item-group class="pb-5">
                                         <v-container>
                                             <v-row>
                                                 <v-col cols="12" md="2" offset-md="1">
                                                     <v-item>
                                                         <v-card class="text-center" height="300" elevation="6">
-                                                            <h2 class="pt-8 py-4">智慧出行</h2>
-                                                            <v-icon class="fas fa-car" style="font-size:50px"
+                                                            <h2 class="pt-8 py-4">智能网联</h2>
+                                                            <v-icon class="fab fa-staylinked" style="font-size:50px"
                                                                 color="#232332"></v-icon>
                                                             <h4 class="pt-4">新能源汽车</h4>
                                                             <h4>无人驾驶</h4>
                                                             <h4>车联网</h4>
-                                                            <h4>汽车后市场</h4>
+                                                            <h4>工业互联网</h4>
                                                         </v-card>
                                                     </v-item>
                                                 </v-col>
@@ -129,34 +129,23 @@
                                                             <v-icon class="fas fa-wifi" style="font-size:50px"
                                                                 color="#232332"></v-icon>
                                                             <h4 class="pt-4">人工智能</h4>
-                                                            <h4>物流仓储</h4>
-                                                            <h4>新零售</h4>
                                                             <h4>大数据科技</h4>
+                                                            <h4>云服务</h4>
+                                                            <h4>通信技术</h4>
                                                         </v-card>
                                                     </v-item>
                                                 </v-col>
-                                                <v-col cols="12" md="2">
-                                                    <v-item>
-                                                        <v-card class="text-center" height="300" elevation="6">
-                                                            <h2 class="pt-8 py-4">智能创造</h2>
-                                                            <v-icon class="fab fa-android" style="font-size:50px"
-                                                                color="#232332"></v-icon>
-                                                            <h4 class="pt-4">云服务</h4>
-                                                            <h4>只能控制</h4>
-                                                            <h4>机器人</h4>
-                                                            <h4>工业互联网</h4>
-                                                        </v-card>
-                                                    </v-item>
-                                                </v-col>
+
                                                 <v-col cols="12" md="2">
                                                     <v-item>
                                                         <v-card class="text-center" height="300" elevation="6">
                                                             <h2 class="pt-8 py-4">金融科技</h2>
                                                             <v-icon class="fas  fa-hand-holding-usd"
-                                                                style="font-size:50px" color="#232332"></v-icon>
+                                                                style="font-size:50px" color="#232332">
+                                                            </v-icon>
                                                             <h4 class="pt-4">金融风控</h4>
                                                             <h4>数据模型</h4>
-                                                            <h4>支付</h4>
+                                                            <h4>支付升级</h4>
                                                             <h4>场景应用</h4>
                                                         </v-card>
                                                     </v-item>
@@ -171,6 +160,19 @@
                                                             <h4>医疗器械研发</h4>
                                                             <h4>创新药</h4>
                                                             <h4>医药医疗分销</h4>
+                                                        </v-card>
+                                                    </v-item>
+                                                </v-col>
+                                                <v-col cols="12" md="2">
+                                                    <v-item>
+                                                        <v-card class="text-center" height="300" elevation="6">
+                                                            <h2 class="pt-8 py-4">数字零售</h2>
+                                                            <v-icon class="fab fa-android" style="font-size:50px"
+                                                                color="#232332"></v-icon>
+                                                            <h4 class="pt-4">代运营</h4>
+                                                            <h4>电商微商</h4>
+                                                            <h4>无人超市</h4>
+                                                            <h4>社区团购</h4>
                                                         </v-card>
                                                     </v-item>
                                                 </v-col>
@@ -196,52 +198,38 @@
                 dense: false,
                 vertical: true,
                 history: [{
-                        year: '2007年',
-                        event: 'VERSAL成立于上海',
-                        detile: '专注于人力资源服务及解决方案'
-                    }, {
-                        year: '2009年',
-                        event: 'VERSAL顾问人数突破50人',
-                        detile: '公司规模稳步扩大'
-                    }, {
-                        year: '2011年',
-                        event: 'VERSAL成立西安分公司',
-                        detile: '为北京、西安等北方企业提供人资全方位业务'
-                    }, {
-                        year: '2012-2013年',
-                        event: 'VERSAL连续两年举办专场招聘活动',
-                        detile: '为众多世界500强企业客户输送高端职位'
-                    }, {
-                        year: '2014年',
-                        event: '成为长三角区域制造业头部猎头服务供应商',
-                        detile: '快速招募到关键职位支持人才'
-                    }, {
-                        year: '2015年',
-                        event: 'VERSAL成立北京分公司',
-                        detile: '成功举办“大数据时代的HR招聘策略应对”论坛'
-                    }, {
-                        year: '2016年',
-                        event: 'VERSAL成立青岛分公司',
-                        detile: '成为网易北京年度最佳人才服务供应商'
-                    }, {
-                        year: '2017年',
-                        event: '荣获上海人才服务行业协会百强',
-                        detile: '人力资源行业百强'
-                    }, {
-                        year: '2018年',
-                        event: '与西安人社局联合举办“十佳 HR”评选活动',
-                        detile: '被授予西安&青岛地区招才引智工作站荣誉称号'
-                    }, {
-                        year: '2019年',
-                        event: '成立12周年,精耕人力资源解决方案',
-                        detile: '多次获得客户给予的 Top vendor的称号'
-                    }, {
-                        year: '2020年',
-                        event: 'VERSAL成立大连,苏州分公司',
-                        detile: '联合建立青岛西海岸新区国际人才交付中心'
-                    }
-
-                ]
+                    year: '2007年',
+                    event: 'VERSAL成立于上海',
+                    detile: '致力于提供专业人力资源解决方案'
+                }, {
+                    year: '2011年',
+                    event: '成为上海制造行业有影响力的招聘公司',
+                    detile: 'VERSAL成立西安分公司，成功完成首个RPO项目'
+                }, {
+                    year: '2013年',
+                    event: '汽车零配件签约客户破百',
+                    detile: '业务版图不断扩大'
+                }, {
+                    year: '2015年',
+                    event: '举行“大数据时代的HR招聘策略应对”论坛',
+                    detile: '会议邀请了众多大数据专家，招聘专家，人才评价专家上海500强招聘负责人'
+                }, {
+                    year: '2017年',
+                    event: '荣获上海人才服务行业协会百强',
+                    detile: '确立人力资源全领域业务发展方向'
+                }, {
+                    year: '2018年',
+                    event: '蝉联年度人力资源“百强企业”称号',
+                    detile: '开展人才外包服务及企业培训业务,荣获青岛、西安地区的人才工作站资质'
+                }, {
+                    year: '2019年',
+                    event: '推出合伙人制度',
+                    detile: '深耕高科技人才外包业务,联合建立青岛冰鉴国际人才交付中心'
+                }, {
+                    year: '2020年',
+                    event: 'VERSAL成立大连,苏州分公司',
+                    detile: '「谷露星选·中国猎头年度榜单」2020年最具成长性猎企大奖心'
+                }]
             }
         },
         mounted() {

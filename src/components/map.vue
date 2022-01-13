@@ -25,12 +25,12 @@
                     <span class="pulse delay-04"></span></div>
                 <h1 class="show-regin font-weight-bold"><span style="font-size: 20px">上海</span></h1>
             </div>
-            <div class="region-list active postition-8 online-node">
+            <!-- <div class="region-list active postition-8 online-node">
                 <div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
                     <span class="pulse delay-05"></span>
                     <span class="pulse delay-04"></span></div>
                 <div class="show-regin"><span>北京</span></div>
-            </div>
+            </div> -->
             <div class="region-list active postition-10 online-node">
                 <div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
                     <span class="pulse delay-05"></span>
@@ -43,12 +43,12 @@
                     <span class="pulse delay-04"></span></div>
                 <div class="show-regin"><span>大连</span></div>
             </div>
-            <div class="region-list active postition-16 online-node">
+            <!-- <div class="region-list active postition-16 online-node">
                 <div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
                     <span class="pulse delay-05"></span>
                     <span class="pulse delay-04"></span></div>
                 <div class="show-regin"><span>贵州</span></div>
-            </div>
+            </div> -->
             <div class="region-list active postition-17 online-node">
             
                 <div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>

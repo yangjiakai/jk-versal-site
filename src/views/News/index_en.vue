@@ -27,6 +27,335 @@
                     <v-card class="mx-auto mt-n12 pa-5" elavation="10">
                         <v-card width="1200" class="mx-auto" flat>
 
+                            <!-- NEWS8-->
+                            <v-dialog v-model="news8" width="1000px">
+                                <template v-slot:activator="{ on }">
+                                    <v-card max-width="1200" class="mx-auto my-5" elevation="3" v-on="on">
+                                        <v-list-item>
+                                            <v-list-item-avatar color="#C88E67">
+                                                <img src="../../assets/logo_icon.png" alt="">
+                                            </v-list-item-avatar>
+                                            <v-list-item-content>
+                                                <v-list-item-title class="headline">聚力前行|2021择仕中国外包团队年会庆典
+                                                </v-list-item-title>
+                                            </v-list-item-content>
+                                        </v-list-item>
+
+                                        <v-img src="../../assets/images/news/801.webp" height="500"></v-img>
+                                        <v-card-text>
+                                            <!-- 暂无新闻 -->
+                                        </v-card-text>
+                                        <v-card-actions>
+
+                                            <div class="flex-grow-1"></div>
+                                            <v-chip>2021-01-20</v-chip>
+                                            <v-btn icon>
+                                                <v-icon>mdi-heart</v-icon>
+                                            </v-btn>
+                                            <v-btn icon>
+                                                <v-icon>mdi-share-variant</v-icon>
+                                            </v-btn>
+                                        </v-card-actions>
+                                    </v-card>
+                                </template>
+                                <!-- 文章8内容 -->
+                                <v-card class="text-center article" dark color="red darken-4">
+                                    <v-card-text style="color:#FBDCA2">
+                                        <h1>聚力前行|2021择仕中国外包团队年会庆典</h1>
+                                        <div>
+                                            <h2>2021.01.17</h2>
+                                            <p class="text-center">2021聚力前行·择仕中国外包年会庆典</p>
+                                            <p class="text-center">Happy New Year's Day</p>
+                                            <p class="text-center">择仕创始人Daniel、首席运营官Wendy等齐聚</p>
+                                            <p class="text-center">总结过去一年取得的成绩，谋划新一年的发展方向。</p>
+                                        </div>
+                                        <v-divider class="mb-5"></v-divider>
+
+                                        <h2>精彩回顾</h2>
+                                        <v-img src="../../assets/images/news/801.webp" class="elevation-5 my-8 my-8">
+                                        </v-img>
+                                        <v-divider class="mb-5"></v-divider>
+                                        <p class="text-center">2020年每一天都是突破</p>
+                                        <p class="text-center">离不开每一位的支持与努力</p>
+                                        <p class="text-center">回眸完成的每一个项目，达成的每一个目标</p>
+                                        <p class="text-center">都是大家齐心协力的结果</p>
+                                        <p class="text-center">由于疫情，很多外地项目的同事不能到达现场</p>
+                                        <p class="text-center">这是一次总结，也是一次开端</p>
+                                        <p class="text-center">对于即将到来的2021</p>
+                                        <p class="text-center">大家定将聚力同行</p>
+                                        <p class="text-center">创造更多的里程碑</p>
+                                        <v-divider class="mb-5"></v-divider>
+                                        <v-row>
+                                            <v-col cols="6">
+                                                <v-img src="../../assets/images/news/802.webp" class="elevation-5 my-8">
+                                                </v-img>
+                                            </v-col>
+                                            <v-col cols="6">
+                                                <v-img src="../../assets/images/news/803.webp" class="elevation-5 my-8">
+                                                </v-img>
+                                            </v-col>
+                                        </v-row>
+                                        <v-divider class="mb-5"></v-divider>
+                                        <v-img src="../../assets/images/news/804.webp" class="elevation-5 my-8">
+                                        </v-img>
+                                        <h5>择仕创始人&外包业务负责人Daniel Xia</h5>
+                                        <p>
+                                            庆典上，择仕中国创始人&外包业务负责人Daniel总结了过去的一年，完成了业务成立以来的许多突破，2021年，择仕将不断精进业务同时提供上千个岗位，为我们的外包员工提供更丰富的职业发展通道和就业机会；未来三年，择仕将发展到3000人规模的外包团队；
+                                        </p>
+                                        <p>择仕2007年成立以来的为百余家世界500强公司和国内知名公司提供高端人才寻访服务，累计共有5000+名高端人才通过择仕的猎头服务入职我们的客户，并发挥了重要作用。
+                                        </p>
+                                        <p>近几年，公司在发展方向上积极响应国家关于企业数字化转型和产业升级的号召，择仕大力发展外包业务。我们的定位是为【头部领域的互联网，高科技以及工业互联网企业】提供初、中高级科技研发类人才，其中也包括像项目经理产品经理等综合性人才。
+                                        </p>
+                                        <p>在此，想借此机会特别感谢代表择仕奋斗在客户现场的每一位，是你们出色表现为择仕赢得了客户的信任和赞誉。2021年让我们共同成长，最后祝大家身体健康，事业进步，万事如意，新春快乐！
+                                        </p>
+                                        <v-divider class="mb-5"></v-divider>
+                                        <v-img src="../../assets/images/news/805.webp" class="elevation-5 my-8">
+                                        </v-img>
+                                        <h5>择仕首席运营官 Wendy Mu</h5>
+                                        <p>择仕的外包业务发展感谢在座每一位的付出，对公司来说，每一位都是公司的财富；对员工来说，通过外包入职会有相对来说更多的好处：外包这样的业务形式扩大了员工的就业机会，外包客户大多是实力强的知名企业，对于普通员工来说是进入名企的机会，加上由于人力成本上涨、人才流动加剧以及人才资质与需求的不匹配等原因，越来越多的企业选择人才外包来解决用工问题。
+                                        </p>
+                                        <p>作为择仕的员工，我们同时服务于不同行业众多客户，可以在候选人不用跳槽的前提下有机会和更多知名客户建立业务关系，于员工自身发展也非常有利。</p>
+                                        <p>希望未来的一年，大家能够再创佳绩。</p>
+                                        <v-divider class="mb-5"></v-divider>
+                                        <h2>
+                                            活动环节</h2>
+                                        <p>在庆典上，晚宴还设置了激动人心的抽奖环节及丰厚的礼品，随着奖项的开启不断掀起年会的高潮。年会不仅给大家带来了欢声笑语，同时也让同事之间彼此的心更加贴近。恭喜获得奖项的同事，也希望这个好彩头伴随整个牛年，牛势大发。
+                                        </p>
+                                        <v-row>
+                                            <v-col cols="6">
+                                                <v-img src="../../assets/images/news/806.webp" class="elevation-5 my-8">
+                                                </v-img>
+                                            </v-col>
+                                            <v-col cols="6">
+                                                <v-img src="../../assets/images/news/808.webp" class="elevation-5 my-8">
+                                                </v-img>
+                                            </v-col>
+                                        </v-row>
+                                        <v-row>
+                                            <v-col cols="6">
+                                                <v-img src="../../assets/images/news/807.webp" class="elevation-5 my-8">
+                                                </v-img>
+                                            </v-col>
+                                            <v-col cols="6">
+                                                <v-img src="../../assets/images/news/809.webp" class="elevation-5 my-8">
+                                                </v-img>
+                                            </v-col>
+                                        </v-row>
+
+                                        <v-divider class="mb-5"></v-divider>
+                                        <h2>互信共创荣</h2>
+                                        <p>择仕的使命是人才赋能产业升级，希望给每一个择仕员工提供一个互创共荣的发展平台，所以，我们希望大家能够通过这个平台使自己的业务能力得到很好的提升，在职业发展上能够更上一个台阶。
+                                        </p>
+                                        <p>让自己的未来增值，为客户的业务赋能。</p>
+
+
+                                        <v-img src="../../assets/images/news/811.webp" class="elevation-5 my-8">
+                                        </v-img>
+                                        <p class="text-center">人才赋能产业升级</p>
+                                        <p class="text-center">VERSAL CHINA</p>
+                                        <p class="text-center">2021聚力前行</p>
+                                        <p class="text-center">与各位同行</p>
+                                        <h2>
+                                            END
+                                        </h2>
+                                    </v-card-text>
+                                    <v-card-actions>
+                                        <div class="flex-grow-1"></div>
+                                        择仕中国
+                                    </v-card-actions>
+                                </v-card>
+                            </v-dialog>
+
+
+                            <!-- NEWS7-->
+                            <v-dialog v-model="news7" width="1000px">
+                                <template v-slot:activator="{ on }">
+                                    <v-card max-width="1200" class="mx-auto my-5" elevation="3" v-on="on">
+                                        <v-list-item>
+                                            <v-list-item-avatar color="#C88E67">
+                                                <img src="../../assets/logo_icon.png" alt="">
+                                            </v-list-item-avatar>
+                                            <v-list-item-content>
+                                                <v-list-item-title class="headline">
+                                                    择仕Versal荣获首届「谷露星选·中国猎头年度榜单」2020年最具成长性猎企大奖
+                                                </v-list-item-title>
+                                            </v-list-item-content>
+                                        </v-list-item>
+
+                                        <v-img src="../../assets/images/news/701.webp" height="500"></v-img>
+                                        <v-card-text>
+                                            <!-- 暂无新闻 -->
+                                        </v-card-text>
+                                        <v-card-actions>
+
+                                            <div class="flex-grow-1"></div>
+                                            <v-chip>2021-01-19</v-chip>
+                                            <v-btn icon>
+                                                <v-icon>mdi-heart</v-icon>
+                                            </v-btn>
+                                            <v-btn icon>
+                                                <v-icon>mdi-share-variant</v-icon>
+                                            </v-btn>
+                                        </v-card-actions>
+                                    </v-card>
+                                </template>
+                                <!-- 文章7内容 -->
+                                <v-card class="text-center article">
+                                    <v-card-text>
+                                        <h1 style="line-height:50px">择仕Versal荣获首届「谷露星选·中国猎头年度榜单」 <br />2020年最具成长性猎企大奖
+                                        </h1>
+                                        <v-img src="../../assets/images/news/701.webp" class="elevation-5 my-8 my-8">
+                                        </v-img>
+                                        <v-divider class="mb-5"></v-divider>
+                                        <p>2021年1月16日，谷露星选2020颁奖盛典暨猎头行业数字化大会在上海机遇中心落下帷幕。</p>
+                                        <p>择仕Versal首席运营官Wendy女士出席了首届「谷露星选·中国猎头年度榜单」颁奖典礼，择仕Versal凭借2020年度优秀的表现，荣获“
+                                            <b>2020年度最具成长性猎企”大奖！</b> </p>
+                                        <v-img src="../../assets/images/news/702.webp" class="elevation-5 my-8 my-8">
+                                        </v-img>
+                                        <v-img src="../../assets/images/news/703.webp" class="elevation-5 my-8 my-8">
+                                        </v-img>
+                                        <h6>「谷露星选」年度榜单排名是猎头行业唯一基于真实业务数据的榜单评选活动。</h6>
+                                        <v-divider class="my-5"></v-divider>
+                                        <p>本次评选活动是通过基于谷露系统真实业务数据的比拼，寻找一批在充满变化的2020年积极实践数字化、探索新模式、获得出色成绩的猎企，用数据为中国猎头行业拨开迷雾、指引方向。
+                                        </p>
+                                        <p>本次累计有180+家猎企报名。初选是通过猎企自主提交的数据进行线上比拼，复选的标准则参考谷露系统中的真实业务数据。</p>
+                                        <v-divider class="mb-5"></v-divider>
+                                        <h1>择仕中国</h1>
+                                        <p>择仕Versal创立于2007年，十三年磨砺，领跑行业。创立以来一直致力于中高端人才寻访、招聘流程外包、人才外包等业务；总部位于上海、于西安、青岛、大连、苏州已建立分公司。成立以来的十余年为无数世界500强企业和国内各行业知名企业提供全方位人力资源服务。
+                                        </p>
+                                        <p>择仕Versal的顾问团队，拥有丰富的行业背景和技术专长.
+                                            同时，我们也因为组织的高速发展而不断吸引行业里优质的人才，并不断地培养和发展精英队伍。服务客户行业覆盖了大制造、互联网、消费品、医药、新能源、金融等多领域。
+
+                                        </p>
+                                        <p>我们始终相信每位客户值得拥有更好的服务，每位候选人值得拥有更好的职业生涯，每位服务顾问值得拥有更好的自我价值实现。</p>
+                                        <v-img src="../../assets/images/news/704.webp" class="elevation-5 my-8 my-8">
+                                        </v-img>
+                                        <h2>
+                                            END
+                                        </h2>
+                                    </v-card-text>
+                                    <v-card-actions>
+                                        <div class="flex-grow-1"></div>
+                                        择仕中国
+                                    </v-card-actions>
+                                </v-card>
+                            </v-dialog>
+
+
+                            <!-- NEWS6-->
+                            <v-dialog v-model="news6" width="1000px">
+                                <template v-slot:activator="{ on }">
+                                    <v-card max-width="1200" class="mx-auto my-5" elevation="3" v-on="on">
+                                        <v-list-item>
+                                            <v-list-item-avatar color="#C88E67">
+                                                <img src="../../assets/logo_icon.png" alt="">
+                                            </v-list-item-avatar>
+                                            <v-list-item-content>
+                                                <v-list-item-title class="headline">汽车新四化时代·工程外包业务商务沙龙圆满举行
+                                                </v-list-item-title>
+                                                <v-list-item-subtitle>2021年1月13日择仕中国小范围邀请了行业内专家及各位伙伴进行交流探讨商务沙龙
+                                                </v-list-item-subtitle>
+                                            </v-list-item-content>
+                                        </v-list-item>
+
+                                        <v-img src="../../assets/images/news/601.webp" height="500"></v-img>
+                                        <v-card-text>
+                                            <!-- 暂无新闻 -->
+                                        </v-card-text>
+                                        <v-card-actions>
+
+                                            <div class="flex-grow-1"></div>
+                                            <v-chip>2021-01-14</v-chip>
+                                            <v-btn icon>
+                                                <v-icon>mdi-heart</v-icon>
+                                            </v-btn>
+                                            <v-btn icon>
+                                                <v-icon>mdi-share-variant</v-icon>
+                                            </v-btn>
+                                        </v-card-actions>
+                                    </v-card>
+                                </template>
+                                <!-- 文章6内容 -->
+                                <v-card class="text-center article">
+                                    <v-card-text>
+                                        <h1>汽车新四化时代·工程外包业务商务沙龙圆满举行</h1>
+                                        <v-divider class="mb-5"></v-divider>
+                                        <p>对于汽车新四化，小编简单做了以下了解：</p>
+                                        <p>汽车行业的“新四化”是指：电动化、网联化、智能化、共享化。</p>
+                                        <p>（1）电动化指的是新能源动力系统领域；</p>
+                                        <p>（2）智能化指的是无人驾驶或者驾驶辅助系统；</p>
+                                        <p>（3）网联化便指的是车联网布局；</p>
+                                        <p>（4）共享化，指的是汽车共享与移动出行。</p>
+                                        <v-img src="../../assets/images/news/601.webp" class="elevation-5 my-8 my-8">
+                                        </v-img>
+                                        <v-divider class="mb-5"></v-divider>
+                                        <p>
+                                            当前，汽车产业正面临着百年未有的大变革。一方面，新一轮技术革命正在推动着汽车产业经历前所未有的变革，产业重组和洗牌趋势加剧；另一方面，受宏观经济下行压力和全球疫情蔓延的影响，汽车市场持续萎靡。面临这样严峻的形势，中国人才研究会会长何宪表示，必须坚定产业发展信心，牢固确立人才引领产业发展的战略定位，越是困难就越是要重视人才。
+                                        </p>
+                                        <p>随着汽车产业的发展，汽车产业人才呈现快速增长态势，在人才的质量、结构、管理效率等方面都有长足进步，但也存在着“新四化”人才匮乏、结构性矛盾突出、流动性强、管理创新不足等问题。
+                                        </p>
+
+                                        <v-img src="../../assets/images/news/602.png" class="elevation-5 my-8">
+                                        </v-img>
+
+                                        <v-divider class="mb-5"></v-divider>
+
+                                        <h5>企业的解决方案，从效率和实施性上而言，工程外包的用工模式便是有效选择之一。</h5>
+
+                                        <v-img src="../../assets/images/news/603.png" class="elevation-5 my-8">
+                                        </v-img>
+                                        <v-divider class="mb-5"></v-divider>
+                                        <p>活动中，邀请的嘉宾分别从三个角度对于汽车工程外包业务进行了发言：
+                                        </p>
+                                        <v-row>
+                                            <v-col cols="6">
+                                                <v-img src="../../assets/images/news/604.webp" class="elevation-5 my-8">
+                                                </v-img>
+                                            </v-col>
+                                            <v-col cols="6">
+                                                <v-img src="../../assets/images/news/605.webp" class="elevation-5 my-8">
+                                                </v-img>
+                                            </v-col>
+                                        </v-row>
+                                        <h4 class="text-left">用工方代表—刘先生</h4>
+                                        <p>刘先生有十几年汽车行业团队管理相关经验，在从0到1搭建团队的过程中，觉得当下用工模式，除了传统的雇佣关系以外，外包用工模式是非常适合提供企业快速发展用人需求；在与汽车工程外包公司的合作中，外包人员的快速到岗支持项目以及对于项目交付的专业性都是值得肯定的，对于企业的用人成本也可根据项目的发展灵活配置，企业也受益于降低成本、更快的招聘周期、并最终获得更多的市场份额和扩大客户群，这是非常好的用工合作模式。
+                                        </p>
+                                        <h4 class="text-left">乙方工程技术顾问代表: 刘洋先生</h4>
+                                        <p>作为一位拥有十年汽车工程外包行业经验的资深顾问，刘先生在从事这项事业上的感受颇深，从一开始的单一职能到后期管理项目的经验，以客观的角度进行了分享：外包技术人员有非常多的跨平台、跨行业、跨流程的实践机会，可以积累非常丰富的经验，从2020年大家就肯定有非常深刻地感觉，对于未来而言，没有绝对的稳定工作，只有对于人才更加细致的要求，作为要在激烈就业竞争中有自己一席之地的技术从业人员，应该对于项目见多识广并且对于好的机会都多加尝试，这样丰富职业发展路径和降低自身可替代性。
+                                        </p>
+                                        <h4 class="text-left">嘉之道汽车咨询合伙人：李双琥先生</h4>
+                                        <p>嘉之道汽车咨询合伙人李先生受邀参加此次活动，作为资深汽车行业人士的他表示对于择仕选择在汽车工程外包业务未来发展极为看好，择仕十几年来为大型车企以及汽车零配件公司中高端人才输送方面的积淀；嘉之道有很多对于汽车整体行业的报告参考，他对于行业内公司都在优化用工模式这一趋势非常看好，许多公司都在使用外包技术人员进行合作，各个分工细化也在加深；当企业遇到“项目性用工”、“规律性波动用工”等情况时，对于专业的技术岗位也有要求，而汽车工程外包这一用工方式也是众多大型车企及零配件公司的首选方式，可以帮助企业不影响项目进度，提升工作效率，降低企业用工风险等。
+                                        </p>
+
+                                        <v-row>
+                                            <v-col cols="6">
+                                                <v-img src="../../assets/images/news/606.webp" class="elevation-5 my-8">
+                                                </v-img>
+                                            </v-col>
+                                            <v-col cols="6">
+                                                <v-img src="../../assets/images/news/607.webp" class="elevation-5 my-8">
+                                                </v-img>
+                                            </v-col>
+                                        </v-row>
+                                        <v-divider class="mb-5"></v-divider>
+                                        <p>活动中，择仕中国首席运营官Wendy女士对公司业务进行了详细介绍，也正式对外对于汽车工程外包业务官宣，阐述了择仕在外包业务这一板块上未来的规划和发展方向，也希望通过此次活动能有机会让各位全面的认识择仕中国。
+                                        </p>
+                                        <p>沙龙活动上大家畅所欲言，对于择仕中国所提供的汽车工程外包服务表示肯定且预祝业务蒸蒸日上。</p>
+
+                                        <v-img src="../../assets/images/news/608.webp" class="elevation-5 my-8">
+                                        </v-img>
+                                        <p>聚散终有时，后期择仕中国将会定期举办此类商务沙龙活动，也欢迎各界合作伙伴及候选人的参与，与择仕建立紧密的联系及良好的合作关系。择仕将全力做好人才赋能产业升级。
+                                        </p>
+                                        <h2>
+                                            END
+                                        </h2>
+                                    </v-card-text>
+                                    <v-card-actions>
+                                        <div class="flex-grow-1"></div>
+                                        择仕中国
+                                    </v-card-actions>
+                                </v-card>
+                            </v-dialog>
                             <!-- NEWS2-->
                             <v-dialog v-model="news2" width="1000px">
                                 <template v-slot:activator="{ on }">
